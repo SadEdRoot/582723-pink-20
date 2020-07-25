@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+// Vendors
+@import "vendors/normalize.css";
+
+// Global
+
+@import "variables";
+@import "global/utilities";
+
+// Blocks
+
+@import "blocks/btn";
+@import "blocks/page-body";
+@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/intro";
+@import "blocks/information";
+@import "blocks/feature";
+@import "blocks/page-footer";
+@import "blocks/social-list";
