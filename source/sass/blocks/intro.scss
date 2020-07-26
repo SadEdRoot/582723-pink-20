@@ -4,7 +4,7 @@
 
 .intro__banner {
   height: 462px;
-  background-color: $background-navi;
+  background-color: $bg-navy;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
@@ -12,17 +12,17 @@
 .intro__title {
   font-size: 24px;
   line-height: 120%;
-  color: #ffffff;
+  color: $color-white;
   margin: auto;
 }
 
 .intro__content {
-  background-color: #1d2631;
+  background-color: $bg-dark-blue;
   height: 271px;
 }
 
 .intro__text {
   font-weight: 300;
   line-height: 24px;
-  color: #ffffff;
+  color: $color-white;
 }

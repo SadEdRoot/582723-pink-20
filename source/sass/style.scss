@@ -1,20 +1,22 @@
 // Vendors
-@import "vendors/normalize.css";
+@import "vendors/normalize";
 
 // Global
-
 @import "variables";
+@import "global/fonts";
+@import "global/typography";
+@import "global/reboot";
 @import "global/utilities";
 
 // Blocks
-
 @import "blocks/btn";
-@import "blocks/page-body";
-@import "blocks/page-header";
+@import "blocks/feature";
+@import "blocks/information";
+@import "blocks/intro";
 @import "blocks/logo";
 @import "blocks/main-nav";
-@import "blocks/intro";
-@import "blocks/information";
-@import "blocks/feature";
+@import "blocks/page-body";
 @import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-main";
 @import "blocks/social-list";
