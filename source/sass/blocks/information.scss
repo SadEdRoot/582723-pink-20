@@ -1,0 +1,20 @@
+.information {
+  width: 320px;
+}
+
+
+.information__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 215px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: $color-navi;
+
+  background-color: $bg-grey;
+}

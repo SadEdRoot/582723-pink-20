@@ -1,0 +1,22 @@
+.feature {
+  width: 100%;
+
+  background-color: $bg-light-grey;
+}
+
+.feature__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feature__item {
+  text-align: center;
+}
+
+.feature__header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}

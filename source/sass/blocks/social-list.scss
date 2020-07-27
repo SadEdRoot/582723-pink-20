@@ -1,0 +1,15 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 178px;
+  margin: auto;
+  padding: 0;
+}
+
+.social-list__item {
+  width: 48px;
+  height: 48px;
+
+  border: 3px solid rgba($color-navi, 0.1);
+  border-radius: 50%;
+}
