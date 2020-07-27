@@ -1,0 +1,30 @@
+.reviews {
+  width: 100%;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reviews__card-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.reviews__card-message {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  line-height: 30px;
+  text-align: center;
+  color: $color-navi;
+
+  background-color: $bg-grey;
+}

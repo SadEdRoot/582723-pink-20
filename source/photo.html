@@ -5,7 +5,7 @@
   <title>Фотографии</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
 <header class="page-header">
   <a class="page-header__logo" href="index.html" aria-label="Ссылка на главную страницу">
     <img
@@ -39,7 +39,7 @@
 </header>
 <main class="page-main">
   <div class="page-main__banner">
-    <h1 class="page-main__banner">
+    <h1 class="page-main__title">
       Фотографии пользователей
     </h1>
   </div>
@@ -48,7 +48,6 @@
     <div class="photo__header">
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </div>
-
     <ul class="photo__list">
       <li class="photo__item photo__item--full-page">
         <img
@@ -59,7 +58,7 @@
           height="150"
         />
         <div class="photo__card">
-          <p class="photo__user-name">Анна <span class="last-visit">(5 минут назад)</span></p>
+          <p class="photo__user-name">Анна <span class="photo__user-name--last-visit">(5 минут назад)</span></p>
           <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <a class="photo__like" href="#" aria-label="поставить лайк"></a>
           <p class="photo__like-count">Нравиться: <span>215</span></p>
@@ -163,10 +162,10 @@
     <div class="upload__app">
       <img
         class="upload__user-photo"
-        src="https://via.placeholder.com/150x150"
+        src="https://via.placeholder.com/280x374"
         alt="Заглушка"
-        width="150"
-        height="150"
+        width="280"
+        height="374"
       />
       <a class="upload__crop-btn" href="#" aria-label="Обрезать"></a>
       <a class="upload__fill-btn" href="#" aria-label="Заливка"></a>

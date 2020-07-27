@@ -1,3 +1,22 @@
 .page-main {
   width: 320px;
 }
+
+.page-main__banner {
+  height: 237px;
+
+  background-color: $bg-navy;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.page-main__title {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: $color-white;
+}
