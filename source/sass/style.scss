@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// Vendors
+@import "vendors/normalize";
+
+// Global
+@import "variables";
+@import "global/fonts";
+@import "global/typography";
+@import "global/reboot";
+@import "global/utilities";
+
+// Blocks
+@import "blocks/btn";
+@import "blocks/feature";
+@import "blocks/information";
+@import "blocks/intro";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/page-body";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/social-list";
+@import "blocks/reviews";
+@import "blocks/pricing";
+@import "blocks/contacts";
+@import "blocks/photo";
+@import "blocks/upload";
+@import "blocks/form";

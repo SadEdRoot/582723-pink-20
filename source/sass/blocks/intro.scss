@@ -1,0 +1,33 @@
+.intro {
+  width: 100%;
+}
+
+.intro__banner {
+  height: 462px;
+
+  background-color: $bg-navy;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: $color-white;
+}
+
+.intro__content {
+  height: 271px;
+
+  background-color: $bg-dark-blue;
+}
+
+.intro__text {
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-white;
+}

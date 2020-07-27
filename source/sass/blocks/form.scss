@@ -1,0 +1,45 @@
+.form__fieldset {
+  &--grey {
+    background-color: $bg-light-grey;
+  }
+}
+
+.form__label {
+  line-height: 30px;
+  color: $color-magenta;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.form__input {
+  width: 276px;
+  height: 59px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-navi;
+
+  border: 2px solid $color-grey;
+  border-radius: 1px;
+}
+
+.form__legend {
+  line-height: 18px;
+  text-align: center;
+  color: $color-magenta;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  width: 276px;
+  height: 197px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-navi;
+
+  border: 2px solid $color-grey;
+  border-radius: 1px;
+}
