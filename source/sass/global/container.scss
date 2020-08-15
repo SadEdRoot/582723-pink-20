@@ -1,0 +1,30 @@
+.container {
+  min-width: 320px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--nopadding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/*
+@media (min-width: $viewpoint--mobile) {
+  .container {
+    width: $viewpoint--mobile;
+  }
+}
+
+@media (min-width: $viewpoint--tablet) {
+  .container {
+    width: $viewpoint--tablet;
+  }
+}
+
+@media (min-width: $viewpoint--desktop) {
+  .container {
+  }
+}
+*/

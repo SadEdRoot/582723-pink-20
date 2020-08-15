@@ -1,6 +1,24 @@
 .page-footer {
-  width: 320px;
-  height: 284px;
+  min-width: 320px;
+  min-height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+
+  @media (min-width: $viewpoint--tablet) {
+    flex-direction: row;
+    min-height: 127px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    min-height: 197px;
+  }
 }
 
 .page-footer__list {

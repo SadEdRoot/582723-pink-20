@@ -1,7 +1,15 @@
 .feature {
   width: 100%;
+  overflow: hidden;
 
-  background-color: $bg-light-grey;
+  @media (min-width: $viewpoint--tablet) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
 }
 
 .feature__list {
@@ -9,14 +17,27 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $viewpoint--tablet) {
+    grid-area: 1 / 2 / 2 /3;
+  }
 }
 
 .feature__item {
   text-align: center;
+
+  @media (min-width: $viewpoint--tablet) {
+    text-align: left;
+  }
 }
 
 .feature__header {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+}
+
+.feature__mobile-app {
+  margin: auto;
+  transform: translateY(43px);
 }
