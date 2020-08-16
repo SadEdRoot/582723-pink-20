@@ -1,9 +1,10 @@
 .btn {
-  display: block;
   box-sizing: border-box;
   width: 280px;
   height: 55px;
-  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-weight: bold;
   font-size: 18px;
@@ -12,6 +13,10 @@
   color: $color-white;
 
   border: 3px solid $color-white;
+
+  @media (min-width: $viewpoint--tablet) {
+    width: 300px;
+  }
 
   &--main {
     border-radius: 29px;
@@ -29,5 +34,15 @@
     color: $color-magenta;
 
     border-color: $color-magenta;
+  }
+
+  &--small-size {
+    @media (min-width: $viewpoint--tablet) {
+      width: 260px;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      width: 183px;
+    }
   }
 }

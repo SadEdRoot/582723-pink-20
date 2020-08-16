@@ -19,7 +19,8 @@
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-
+  max-width: 980px;
+  margin: 0 auto;
 
   @media (min-width: $viewpoint--desktop) {
     justify-content: space-between;

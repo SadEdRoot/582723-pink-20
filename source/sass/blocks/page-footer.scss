@@ -18,6 +18,8 @@
 
   @media (min-width: $viewpoint--desktop) {
     min-height: 197px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -27,4 +29,7 @@
 
 .page-footer__creator {
   line-height: 18px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }

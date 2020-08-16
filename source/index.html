@@ -10,7 +10,7 @@
 
 <body class="page-body">
 <header class="page-header page-header--close">
-  <div class="container page-header__wrapper">
+  <div class="page-header__wrapper">
     <div class="page-header__header-wrapper">
       <a class="page-header__logo">
         <img
@@ -47,8 +47,10 @@
 <main class="page-main">
   <h1 class="visually-hidden">Мобильное приложение PINK</h1>
   <section class="intro">
+    <div class="intro__container ">
+
+
     <div class="intro__banner">
-      <div class="intro__container">
         <h2 class="intro__title">Взгляни на жизнь иначе!</h2>
         <img
           class="intro__mobile-hand"
@@ -57,7 +59,6 @@
           width="258"
           height="286"
         />
-      </div>
     </div>
     <div class="intro__content">
       <a class="intro__download btn btn--main" href="#">
@@ -72,6 +73,7 @@
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </div>
     </div>
+    </div>
   </section>
   <section class="information ">
     <h2 class="visually-hidden">Информация о приложении</h2>
@@ -82,6 +84,13 @@
     <div class="information__feature feature">
       <ul class="feature__list">
         <li class="feature__item">
+          <img
+            class="feature__image"
+            src="img/iphone-screen-1-desktop@1x.png"
+            alt="Заглушка"
+            width="282"
+            height="302"
+          />
           <h3 class="feature__header">Поднимаем настроение</h3>
           <p  class="feature__text">
             Приложение позволит вам победить осеннюю хандру и депрессию
@@ -89,6 +98,13 @@
           </p>
         </li>
         <li class="feature__item">
+          <img
+            class="feature__image"
+            src="img/iphone-screen-2-desktop@1x.png"
+            alt="Заглушка"
+            width="282"
+            height="302"
+          />
           <h3>Меняет мир вокруг</h3>
           <p>
             Сделайте снимок и украсьте его смайликом или текстовой подписью,
@@ -96,6 +112,13 @@
           </p>
         </li>
         <li class="feature__item">
+          <img
+            class="feature__image"
+            src="img/iphone-screen-3-desktop@1x.png"
+            alt="Заглушка"
+            width="282"
+            height="302"
+          />
           <h3>Заводит новых друзей</h3>
           <p>
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
@@ -112,42 +135,55 @@
       />
     </div>
     <div class="information__fact">
-      <img
-        class="information__clock"
-        src="img/icon-timer.svg"
-        alt="Заглушка"
-        width="238"
-        height="276"
-      />
-      <div class="information__fact-content">
-        <p class="information__fact-title">Эффект на 24 часа!</p>
-        <p class="information__fact-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="information__fact-link">Узнать больше об исследовании</a>
+      <div class="information__wrapper">
+        <img
+          class="information__clock"
+          src="img/icon-timer.svg"
+          alt="Заглушка"
+          width="238"
+          height="276"
+        />
+        <div class="information__fact-content">
+          <p class="information__fact-title">Эффект на 24 часа!</p>
+          <p class="information__fact-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="information__fact-link">Узнать больше об исследовании</a>
+        </div>
       </div>
     </div>
   </section>
   <section class="reviews">
     <h2 class="visually-hidden">Отзывы пользователей</h2>
-    <div class="reviews__wrapper slider">
-      <ul  class="reviews__list">
-        <li class="reviews__card">
-          <p class="reviews__card-header">Николай Петров</p>
-          <p class="reviews__card-message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-        <li class="reviews__card">
-          <p class="reviews__card-header">Николай Петров</p>
-          <p class="reviews__card-message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-        <li class="reviews__card">
-          <p class="reviews__card-header">Николай Петров</p>
-          <p class="reviews__card-message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-      </ul>
-      <ul class="reviews__toggles slider__toggles">
-        <li><button class="slider__toggle slider__toggle--current" type="button" aria-label="1"></button></li>
-        <li><button class="slider__toggle" type="button" aria-label="2"></button></li>
-        <li><button class="slider__toggle" type="button" aria-label="3"></button></li>
-      </ul>
+    <div class="container">
+      <div class="slider">
+        <ul  class="slider__list">
+          <li class="slider__card slider__card--checked">
+            <div>
+              <p class="slider__card-title">Николай Петров</p>
+              <p class="slider__card-sudtitle">25 лет, водитель трамвая</p>
+            </div>
+            <p class="slider__card-message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="slider__card">
+            <div>
+              <p class="slider__card-title">Николай Петров</p>
+              <p class="slider__card-sudtitle">25 лет, водитель трамвая</p>
+            </div>
+            <p class="slider__card-message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="slider__card">
+            <div>
+              <p class="slider__card-title">Николай Петров</p>
+              <p class="slider__card-sudtitle">25 лет, водитель трамвая</p>
+            </div>
+            <p class="slider__card-message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+        <ul class="slider__toggles">
+          <li><button class="slider__toggle slider__toggle--current" type="button" aria-label="1"></button></li>
+          <li><button class="slider__toggle" type="button" aria-label="2"></button></li>
+          <li><button class="slider__toggle" type="button" aria-label="3"></button></li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="pricing">
@@ -216,22 +252,24 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-    <div class="contacts__contact">
-      <p class="contacts__type">Звоните:</p>
-      <a class="contacts__text" href="tel:88125556666" aria-label="Телефон компании">+7 (812) 555-66-66</a>
-    </div>
-    <div class="contacts__contact">
-      <p class="contacts__type">Пишите:</p>
-      <a class="contacts__text" href="mailto:mail@htmlacademy.ru" aria-label="Почта компании">mail@htmlacademy.ru</a>
-    </div>
-    <div class="contacts__contact">
-      <p class="contacts__type">Приезжайте в гости:</p>
-      <p class="contacts__text">ул. Большая
-        Конюшенная, 19/8</p>
+    <div class="container contacts__wrapper">
+      <div class="contacts__contact">
+        <p class="contacts__type">Звоните:</p>
+        <a class="contacts__text" href="tel:88125556666" aria-label="Телефон компании">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__contact">
+        <p class="contacts__type">Пишите:</p>
+        <a class="contacts__text" href="mailto:mail@htmlacademy.ru" aria-label="Почта компании">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__contact contacts__contact--street">
+        <p class="contacts__type">Приезжайте в гости:</p>
+        <p class="contacts__text">ул. Большая
+          Конюшенная, 19/8</p>
+      </div>
     </div>
     <img
       class="contacts__map"
-      src="https://via.placeholder.com/320x200"
+      src="img/bg-map-mobile@1x.png"
       alt="Заглушка"
       width="320"
       height="200"/>
@@ -241,8 +279,8 @@
   <a class="page-footer__logo">
     <img
       class="glass-logo"
-      src="https://via.placeholder.com/145x40"
-      alt="Заглушка"
+      src="img/logo-pink-blue-mobile.svg"
+      alt="Лого Pink"
       width="145"
       height="40"
     />
@@ -260,7 +298,14 @@
   </ul>
   <div class="page-footer__creator">
     <span>Разработано</span>
-    <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Академию"></a>
+    <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Академию">
+      <img
+      class="glass-logo"
+      src="img/logo-htmlacademy.svg"
+      alt="Лого Pink"
+      width="27"
+      height="34"
+    /></a>
   </div>
 </footer>
 <script src="js/index.js"></script>

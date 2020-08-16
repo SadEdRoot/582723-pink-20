@@ -1,25 +1,44 @@
-/*
-.page-main {
-  width: 320px;
-}
-*/
 .page-main__banner {
-  height: 237px;
-
   background-color: $bg-navy;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
+
+  padding-top: 100px;
+  padding-bottom: 85px;
+
+  @media (min-width: $viewpoint--tablet) {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    padding-top: 190px;
+    padding-bottom: 130px;
+    background-size: initial;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
+  width: 230px;
 
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $viewpoint--tablet) {
+    font-size: 50px;
+    line-height: 68px;
+    width: 500px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 750px;
+  }
 }
 
 .page-main__description {

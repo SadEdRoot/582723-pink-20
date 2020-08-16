@@ -1,6 +1,5 @@
 .intro {
   width: 100%;
-  min-width: 320px;
   background-color: $bg-dark-blue;
 
   @media (min-width: $viewpoint--tablet) {
@@ -8,7 +7,9 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -19,33 +20,43 @@
 }
 
 .intro__banner {
-  min-height: 462px;
   width: 100%;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   padding-top: 67px;
-
-
-  @media (min-width: $viewpoint--tablet) {
-    background-image: none;
-    padding-top: 95px;
-  }
-
-  @media (min-width: $viewpoint--desktop) {
-    background-image: none;
-  }
-}
-
-.intro__container {
-  margin: auto;
-  min-height: 396px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+
+
+  @media (min-width: $viewpoint--tablet) {
+    background-image: none;
+    padding-top: 110px;
+    width: 300px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    background-image: none;
+    width: 300px;
+  }
+}
+
+.intro__container {
+  min-width: 320px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+
+  @media (min-width: $viewpoint--tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .intro__title {
@@ -59,17 +70,31 @@
   line-height: 120%;
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $viewpoint--tablet) {
+    width: 200px;
+    padding-top: 102px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 240px;
+    font-size: 50px;
+    line-height: 68px;
+
+    padding-bottom: 40px;
+  }
 }
 
 .intro__mobile-hand {
-  align-self: flex-start;
-
+  margin-right: 62px;
 
   @media (min-width: $viewpoint--tablet) {
     align-self: flex-end;
     position: absolute;
     bottom: 0;
-    right: 20px;
+    left: 50%;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -78,18 +103,56 @@
 }
 
 .intro__content {
-  min-height: 271px;
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+
+  @media (min-width: $viewpoint--tablet) {
+    width: 300px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 300px;
+  }
+}
+
+.intro__download {
+  margin-top: 20px;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: 0;
+  }
 }
 
 .intro__list {
   list-style: none;
   display: flex;
+  justify-content: space-around;
+
+  margin-top: 32px;
+  margin-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: 46px;
+    margin-bottom: 38px;
+    width: 300px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    margin-top: 80px;
+    margin-bottom: 58px;
+  }
+}
+
+.intro__item {
+  height: 56px;
+  width: 44px;
+  background-color: red;
 }
 
 .intro__text {
@@ -98,4 +161,13 @@
   line-height: 24px;
   color: $color-white;
   text-align: center;
+  margin-bottom: 38px;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    margin-bottom: 100px;
+  }
 }
