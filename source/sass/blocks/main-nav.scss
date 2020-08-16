@@ -1,19 +1,33 @@
 .main-nav {
   width: 100%;
+  display: none;
+
+  @media (min-width: $viewpoint--desktop) {
+    width: auto;
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  &--no-js {
+    display: block;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 320px;
-  height: 63px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 25px;
 
   list-style: none;
   font-weight: bold;
@@ -23,4 +37,17 @@
 
   background-color: $bg-navy;
   box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $viewpoint--desktop) {
+    width: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: normal;
+
+    &:last-child {
+      padding-right: 20px;
+    }
+  }
 }

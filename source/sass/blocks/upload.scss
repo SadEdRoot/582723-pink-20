@@ -1,15 +1,50 @@
-.upload {
-  background-color: $bg-light-grey;
-}
-
 .upload__header {
-  height: 172px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
 
   line-height: 30px;
   text-align: center;
   color: $color-navi;
 
-  background-color: $color-white;
+  @media (min-width: $viewpoint--tablet) {
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+}
+
+.upload__app {
+  background-color: $bg-light-grey;
+  padding-top: 40px;
+
+  @media (min-width: $viewpoint--tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    justify-content: center;
+  }
+}
+
+.upload__user-photo {
+  padding-top: 20px;
+
+  @media (min-width: $viewpoint--tablet) {
+    width: 300px;
+    margin: 0;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    padding-right: 80px;
+    padding-bottom: 57px;
+  }
+}
+
+.upload__panel {
+  @media (min-width: $viewpoint--tablet) {
+    width: calc(50% - 10px);
+  }
 }

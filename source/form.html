@@ -3,41 +3,46 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Конкурс</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
-<header class="page-header">
-  <a class="page-header__logo" href="index.html" aria-label="Ссылка на главную страницу">
-    <img
-      class="logo"
-      src="https://via.placeholder.com/150x150"
-      alt="Заглушка"
-      width="150"
-      height="150"/>
-  </a>
-  <button
-    class="page-header__burger-btn"
-    type="button"
-    aria-label="Открыть/закрыть меню"
-  ></button>
-  <nav class="page-header__nav main-nav">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a href="index.html">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="photo.html">Фотография</a>
-      </li>
-      <li class="main-nav__item">
-        <a>Конкурс</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="https://htmlacademy.ru/">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+<header class="page-header page-header--close">
+  <div class="container page-header__wrapper">
+    <div class="page-header__header-wrapper">
+      <a class="page-header__logo" href="index.html" aria-label="Ссылка на главную страницу">
+        <img
+          class="logo"
+          src="img/logo-pink-white-mobile.svg"
+          alt="Заглушка"
+          width="74"
+          height="23"/>
+      </a>
+      <button
+        class="page-header__burger-btn"
+        type="button"
+        aria-label="Открыть/закрыть меню"
+      ></button>
+    </div>
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html">Фотография</a>
+        </li>
+        <li class="main-nav__item">
+          <a>Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="page-main">
   <div class="page-main__banner">
@@ -99,14 +104,14 @@
     </small>
   </form>
 </main>
-<footer class="page-footer">
+<footer class="page-footer container">
   <a class="page-footer__logo" href="index.html" aria-label="Ссылка на главную страницу">
     <img
       class="glass-logo"
-      src="https://via.placeholder.com/150x150"
-      alt="Заглушка"
-      width="150"
-      height="150"
+      src="img/logo-pink-blue-mobile.svg"
+      alt="Лого Pink"
+      width="145"
+      height="40"
     />
   </a>
   <ul class="page-footer__list social-list">
@@ -124,6 +129,6 @@
     <span>Разработано</span>
     <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Академию"></a>
   </div>
-</footer>
+</footer><script src="js/index.js"></script>
 </body>
 </html>

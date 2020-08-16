@@ -13,6 +13,12 @@ $bg-light-grey: #f2f2f2;
 $bg-grey: $color-grey;
 
 
-//Fonts
+// Fonts
 
 $font-family--opensans: "Open Sans", sans-serif;
+
+// Viewpoints
+
+$viewpoint--mobile: 320px;
+$viewpoint--tablet: 660px;
+$viewpoint--desktop: 960px;

@@ -2,60 +2,65 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Фотографии</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-<header class="page-header">
-  <a class="page-header__logo" href="index.html" aria-label="Ссылка на главную страницу">
-    <img
-      class="logo"
-      src="https://via.placeholder.com/150x150"
-      alt="Заглушка"
-      width="150"
-      height="150"/>
-  </a>
-  <button
-    class="page-header__burger-btn"
-    type="button"
-    aria-label="Открыть/закрыть меню"
-  ></button>
-  <nav class="page-header__nav main-nav">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a href="index.html">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a>Фотография</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="form.html">Конкурс</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="https://htmlacademy.ru/">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+<header class="page-header page-header--close">
+  <div class="page-header__wrapper">
+    <div class="page-header__header-wrapper">
+      <a class="page-header__logo" href="index.html" aria-label="Ссылка на главную страницу">
+        <img
+          class="logo"
+          src="img/logo-pink-white-mobile.svg"
+          alt="Заглушка"
+          width="74"
+          height="23"/>
+      </a>
+      <button
+        class="page-header__burger-btn"
+        type="button"
+        aria-label="Открыть/закрыть меню"
+      ></button>
+    </div>
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a>Фотография</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="page-main">
   <div class="page-main__banner">
     <h1 class="page-main__title">
-      Фотографии пользователей
+      Фотографии<br>пользователей
     </h1>
   </div>
-  <section class="photo">
-    <h2 class="visually-hidden">Галерея фотографий</h2>
-    <div class="photo__header">
-      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-    </div>
-    <ul class="photo__list">
-      <li class="photo__item photo__item--full-page">
+    <section class="photo">
+      <h2 class="visually-hidden">Галерея фотографий</h2>
+      <p class="photo__intro container">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
+      <div class="photo__item photo__item--full-page">
+        <span class="photo__daily">ПАНОРАМА ДНЯ</span>
         <img
           class="photo__user-panorama"
-          src="https://via.placeholder.com/150x150"
+          src="./img/panorama-mobile@1x.jpg"
           alt="Заглушка"
-          width="150"
-          height="150"
+          width="320"
+          height="137"
         />
         <div class="photo__card">
           <p class="photo__user-name">Анна <span class="photo__user-name--last-visit">(5 минут назад)</span></p>
@@ -63,127 +68,130 @@
           <a class="photo__like" href="#" aria-label="поставить лайк"></a>
           <p class="photo__like-count">Нравиться: <span>215</span></p>
         </div>
-      </li>
-      <li class="photo__item">
-        <img
-          class="photo__user-photo"
-          src="https://via.placeholder.com/150x150"
-          alt="Заглушка"
-          width="150"
-          height="150"
-        />
-        <div class="photo__card">
-          <p class="photo__user-name">Левон <span class="last-visit">(5 часов назад)</span></p>
-          <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a class="photo__like" href="#" aria-label="поставить лайк"></a>
-          <p class="photo__like-count">Нравиться: <span>356</span></p>
-        </div>
-      </li>
-      <li class="photo__item">
-        <img
-          class="photo__user-photo"
-          src="https://via.placeholder.com/150x150"
-          alt="Заглушка"
-          width="150"
-          height="150"
-        />
-        <div class="photo__card">
-          <p class="photo__user-name">Антон <span class="last-visit">(12 часов назад)</span></p>
-          <p class="photo__comment">Соседи будут рады!</p>
-          <a class="photo__like" href="#" aria-label="поставить лайк"></a>
-          <p class="photo__like-count">Нравиться: <span>666</span></p>
-        </div>
-      </li>
-      <li class="photo__item">
-        <img
-          class="photo__user-photo"
-          src="https://via.placeholder.com/150x150"
-          alt="Заглушка"
-          width="150"
-          height="150"
-        />
-        <div class="photo__card">
-          <p class="photo__user-name">Борис <span class="last-visit">(20 часов назад)</span></p>
-          <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a class="photo__like" href="#" aria-label="поставить лайк"></a>
-          <p class="photo__like-count">Нравиться: <span>215</span></p>
-        </div>
-      </li>
-      <li class="photo__item">
-        <img
-          class="photo__user-photo"
-          src="https://via.placeholder.com/150x150"
-          alt="Заглушка"
-          width="150"
-          height="150"
-        />
-        <div class="photo__card">
-          <p class="photo__user-name">Сергей <span class="last-visit">(25 часов назад)</span></p>
-          <p class="photo__comment">Самая кубанская в мире!</p>
-          <a class="photo__like" href="#" aria-label="поставить лайк"></a>
-          <p class="photo__like-count">Нравиться: <span>4</span></p>
-        </div>
-      </li>
-      <li class="photo__item">
-        <img
-          class="photo__user-photo"
-          src="https://via.placeholder.com/150x150"
-          alt="Заглушка"
-          width="150"
-          height="150"
-        />
-        <div class="photo__card">
-          <p class="photo__user-name">Максим <span class="last-visit">(40 часов назад)</span></p>
-          <p class="photo__comment">Где снег-то?</p>
-          <a class="photo__like" href="#" aria-label="поставить лайк"></a>
-          <p class="photo__like-count">Нравиться: <span>150</span></p>
-        </div>
-      </li>
-      <li class="photo__item">
-        <img
-          class="photo__user-photo"
-          src="https://via.placeholder.com/150x150"
-          alt="Заглушка"
-          width="150"
-          height="150"
-        />
-        <div class="photo__card">
-          <p class="photo__user-name">Надежда <span class="last-visit">(45 часов назад)</span></p>
-          <p class="photo__comment">Всем GM и взаимные лайки!</p>
-          <a class="photo__like" href="#" aria-label="поставить лайк"></a>
-          <p class="photo__like-count">Нравиться: <span>2560</span></p>
-        </div>
-      </li>
-    </ul>
-  </section>
+      </div>
+      <ul class="photo__list container">
+        <li class="photo__item">
+          <img
+            class="photo__user-photo"
+            src="./img/photo-car-mobile@1x.jpg"
+            alt="Заглушка"
+            width="280"
+            height="180"
+          />
+          <div class="photo__card">
+            <p class="photo__user-name">Левон <span class="last-visit">(5 часов назад)</span></p>
+            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photo__like" href="#" aria-label="поставить лайк"></a>
+            <p class="photo__like-count">Нравиться: <span>356</span></p>
+          </div>
+        </li>
+        <li class="photo__item">
+          <img
+            class="photo__user-photo"
+            src="./img/photo-drumset-mobile@1x.jpg"
+            alt="Заглушка"
+            width="280"
+            height="180"
+          />
+          <div class="photo__card">
+            <p class="photo__user-name">Антон <span class="last-visit">(12 часов назад)</span></p>
+            <p class="photo__comment">Соседи будут рады!</p>
+            <a class="photo__like" href="#" aria-label="поставить лайк"></a>
+            <p class="photo__like-count">Нравиться: <span>666</span></p>
+          </div>
+        </li>
+        <li class="photo__item">
+          <img
+            class="photo__user-photo"
+            src="./img/photo-window-mobile@1x.jpg"
+            alt="Заглушка"
+            width="280"
+            height="180"
+          />
+          <div class="photo__card">
+            <p class="photo__user-name">Борис <span class="last-visit">(20 часов назад)</span></p>
+            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photo__like" href="#" aria-label="поставить лайк"></a>
+            <p class="photo__like-count">Нравиться: <span>215</span></p>
+          </div>
+        </li>
+        <li class="photo__item">
+          <img
+            class="photo__user-photo"
+            src="./img/photo-fair-mobile@1x.jpg"
+            alt="Заглушка"
+            width="280"
+            height="180"
+          />
+          <div class="photo__card">
+            <p class="photo__user-name">Сергей <span class="last-visit">(25 часов назад)</span></p>
+            <p class="photo__comment">Самая кубанская в мире!</p>
+            <a class="photo__like" href="#" aria-label="поставить лайк"></a>
+            <p class="photo__like-count">Нравиться: <span>4</span></p>
+          </div>
+        </li>
+        <li class="photo__item">
+          <img
+            class="photo__user-photo"
+            src="./img/photo-pov-mobile@1x.jpg"
+            alt="Заглушка"
+            width="280"
+            height="180"
+          />
+          <div class="photo__card">
+            <p class="photo__user-name">Максим <span class="last-visit">(40 часов назад)</span></p>
+            <p class="photo__comment">Где снег-то?</p>
+            <a class="photo__like" href="#" aria-label="поставить лайк"></a>
+            <p class="photo__like-count">Нравиться: <span>150</span></p>
+          </div>
+        </li>
+        <li class="photo__item">
+          <img
+            class="photo__user-photo"
+            src="./img/photo-wing-mobile@1x.jpg"
+            alt="Заглушка"
+            width="280"
+            height="180"
+          />
+          <div class="photo__card">
+            <p class="photo__user-name">Надежда <span class="last-visit">(45 часов назад)</span></p>
+            <p class="photo__comment">Всем GM и взаимные лайки!</p>
+            <a class="photo__like" href="#" aria-label="поставить лайк"></a>
+            <p class="photo__like-count">Нравиться: <span>2560</span></p>
+          </div>
+        </li>
+      </ul>
+    </section>
   <section class="upload">
     <h2 class="visually-hidden">Загрузите свою фотографию</h2>
-    <p class="upload__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-    <div class="upload__app">
+    <p class="upload__header">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="upload__app container container--nopadding">
       <img
         class="upload__user-photo"
-        src="https://via.placeholder.com/280x374"
+        src="./img/photo-road-mobile@1x.jpg"
         alt="Заглушка"
         width="280"
         height="374"
       />
-      <a class="upload__crop-btn" href="#" aria-label="Обрезать"></a>
-      <a class="upload__fill-btn" href="#" aria-label="Заливка"></a>
-      <a class="upload__contrast-btn" href="#" aria-label="Контраст"></a>
-      <div class="upload__scale"></div>
-      <button class="upload__upload-btn btn btn--main btn--red">Запостить</button>
-      <button class="upload__cancel-btn btn btn--main" disabled>Отмена</button>
+      <div class="upload__panel">
+        <a class="upload__crop-btn" href="#" aria-label="Обрезать"></a>
+        <a class="upload__fill-btn" href="#" aria-label="Заливка"></a>
+        <a class="upload__contrast-btn" href="#" aria-label="Контраст"></a>
+        <div class="upload__scale"></div>
+        <button class="upload__upload-btn btn btn--main btn--red btn--small-size">Запостить</button>
+        <button class="upload__cancel-btn btn btn--main btn--small-size" disabled>Отмена</button>
+      </div>
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer container">
   <a class="page-footer__logo" href="index.html" aria-label="Ссылка на главную страницу">
     <img
       class="glass-logo"
-      src="https://via.placeholder.com/150x150"
-      alt="Заглушка"
-      width="150"
-      height="150"
+      src="img/logo-pink-blue-mobile.svg"
+      alt="Лого Pink"
+      width="145"
+      height="40"
     />
   </a>
   <ul class="page-footer__list social-list">
@@ -202,5 +210,6 @@
     <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Академию"></a>
   </div>
 </footer>
+<script src="js/index.js"></script>
 </body>
 </html>
