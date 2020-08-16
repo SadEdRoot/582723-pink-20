@@ -45,6 +45,6 @@
 
 .upload__panel {
   @media (min-width: $viewpoint--tablet) {
-    width: 50% - 10px;
+    width: calc(50% - 10px);
   }
 }

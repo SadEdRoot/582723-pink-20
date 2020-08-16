@@ -28,8 +28,6 @@
 .photo__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0 20px;
 
   list-style: none;
 }
@@ -98,6 +96,10 @@
 
   .photo__card {
     margin: 0 20px;
+    max-width: 940px;
+    @media (min-width: $viewpoint--desktop) {
+      margin: 0 auto;
+    }
   }
 }
 
