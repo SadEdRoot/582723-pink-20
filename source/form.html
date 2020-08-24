@@ -50,11 +50,11 @@
       Конкурс на самое безбашенное путешествие с Пинк
     </h1>
   </div>
-  <div class="page-main__description">
-    Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+  <div class="page-main__description container">
+    Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="page-main__additional-desc">Пожалуйста, заполните форму ниже:</span>
   </div>
-  <form class="form" action="https://echo.htmlacademy.ru">
-    <fieldset class="form__fieldset">
+  <form class="form container" action="https://echo.htmlacademy.ru">
+    <fieldset class="form__fieldset form__fieldset--no-board">
       <label class="form__label" for="last-name">ФАМИЛИЯ:</label>
       <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" required>
       <label class="form__label" for="first-name">ИМЯ:</label>
@@ -63,45 +63,48 @@
       <label class="form__label" for="father-name">ОТЧЕСТВО:</label>
       <input class="form__input" type="text" id="father-name" name="father-name" placeholder="Ну и отчество тоже">
     </fieldset>
-    <fieldset class="form__fieldset form__fieldset--grey">
+    <fieldset class="form__fieldset form__fieldset--grey form__fieldset--features form__fieldset--inner-padding">
       <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
       <input class="form__checkbox" type="checkbox" id="shark" name="achievements" value="shark" checked>
-      <label for="shark">Сделал селфи с акулой</label>
+      <label class="form__checkbox-label" for="shark">Сделал селфи с акулой</label>
       <input class="form__checkbox" type="checkbox" id="beach" name="achievements" value="beach" checked>
-      <label for="beach">Обгорел на пляже</label>
+      <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
       <input class="form__checkbox" type="checkbox" id="chack" name="achievements" value="chack">
-      <label for="chack">Видел Чака Норриса</label>
+      <label class="form__checkbox-label"for="chack">Видел Чака Норриса</label>
       <input class="form__checkbox" type="checkbox" id="souvenir" name="achievements" value="souvenir">
-      <label for="souvenir">Накупил сувениров</label>
+      <label class="form__checkbox-label"for="souvenir">Накупил сувениров</label>
       <input class="form__checkbox" type="checkbox" id="tower" name="achievements" value="tower" checked>
-      <label for="tower">Удержал башню</label>
+      <label class="form__checkbox-label"for="tower">Удержал башню</label>
       <input class="form__checkbox" type="checkbox" id="hotel" name="achievements" value="hotel">
-      <label for="hotel">Разгромил отель</label>
+      <label class="form__checkbox-label"for="hotel">Разгромил отель</label>
     </fieldset>
-    <fieldset class="form__fieldset">
+    <fieldset class="form__fieldset form__fieldset--inner-padding form__fieldset--contact">
+      <legend class="form__legend form__legend--hidden-legend">Контактная информация</legend>
       <label class="form__label" for="phone-number">НОМЕР ТЕЛЕФОНА</label>
       <input class="form__input" type="tel" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста">
       <label class="form__label" for="e-mail">АДРЕС ПОЧТЫ</label>
       <input class="form__input" type="email" id="e-mail" name="e-mail" placeholder="Введите почту *" required>
     </fieldset>
-    <fieldset class="form__fieldset form__fieldset--grey">
+    <fieldset class="form__fieldset form__fieldset--grey form__fieldset--app form__fieldset--inner-padding">
       <legend class="form__legend">С каким приложением путешествовали?</legend>
       <input class="form__radio" type="radio" id="radio_ios" name="app" value="ios" checked>
-      <label for="radio_ios">Pink для iOS</label>
+      <label class="form__radio-label" for="radio_ios">Pink для iOS</label>
       <input class="form__radio" type="radio" id="radio_android" name="app" value="android">
-      <label for="radio_android">Pink на Android</label>
+      <label class="form__radio-label"for="radio_android">Pink на Android</label>
       <input class="form__radio" type="radio" id="radio_win-phone" name="app" value="win-phone">
-      <label for="radio_win-phone">Windows Phone</label>
+      <label class="form__radio-label" for="radio_win-phone">Windows Phone</label>
     </fieldset>
-    <fieldset class="form__fieldset">
-      <label class="form__label form__label--center" for="your-emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+    <fieldset class="form__fieldset form__fieldset--inner-padding form__fieldset--emotion">
+      <legend class="form__legend" for="your-emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
       <textarea class="form__textarea" id="your-emotion" name="your-emotion">Можно прям в красках, не стесняясь в выражениях
       </textarea>
     </fieldset>
-    <button class="form__submit btn btn--submit" type="submit">Отправить форму</button>
-    <small class="form__footnote">
-      <span class="form__spot">*</span> — обязательные поля
-    </small>
+    <div class="form__button-field">
+      <button class="form__submit btn btn--submit" type="submit">Отправить форму</button>
+      <small class="form__footnote">
+        <span class="form__spot">*</span> — обязательные поля
+      </small>
+    </div>
   </form>
 </main>
 <footer class="page-footer container">
