@@ -1,12 +1,20 @@
 .form {
   display: grid;
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $viewpoint--tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
     grid-template-columns: auto;
     gap: 65px;
   }
 
   @media (min-width: $viewpoint--desktop) {
+    padding-left: 10px;
+    padding-right: 10px;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
@@ -17,7 +25,9 @@
   border: none;
   margin: 0;
   display: block;
-  padding: 0;
+
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
 
@@ -35,22 +45,6 @@
 
   &--no-board {
     border: none;
-  }
-
-  &--grey {
-    background-color: $bg-light-grey;
-
-    @media (min-width: $viewpoint--tablet) {
-      background-color: transparent;
-    }
-
-    .form__legend {
-      background-color: $bg-light-grey;
-
-      @media (min-width: $viewpoint--tablet) {
-        background-color: transparent;
-      }
-    }
   }
 
   &--inner-padding {
@@ -96,6 +90,15 @@
   }
 }
 
+.form__background-grey {
+  background-color: $bg-light-grey;
+  background-clip: border-box;
+
+  @media (min-width: $viewpoint--tablet) {
+    background-color: transparent;
+  }
+}
+
 .form__legend {
   line-height: 18px;
   text-align: center;
@@ -127,7 +130,6 @@
     }
   }
 }
-
 
 .form__label {
   line-height: 30px;

@@ -44,6 +44,12 @@
     font-size: 50px;
     line-height: 68px;
   }
+
+  &--short {
+    @media (min-width: $viewpoint--desktop) {
+      width: 500px;
+    }
+  }
 }
 
 .information__feature {
@@ -137,6 +143,7 @@
 
 .information__fact-link {
   color: $color-magenta;
+  text-decoration: underline;
 
   @media (min-width: $viewpoint--desktop) {
     font-size: 18px;
