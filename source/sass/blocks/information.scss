@@ -129,6 +129,10 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $viewpoint--desktop) {
+    line-height: 30px;
+  }
 }
 
 .information__fact-text {

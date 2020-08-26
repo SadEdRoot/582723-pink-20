@@ -42,6 +42,7 @@
 
 
 .pricing__header {
+  position: relative;
   text-align: center;
   height: 94px;
   line-height: 30px;
@@ -55,10 +56,37 @@
     height: 75px;
   }
 
-
   &--inner {
     border-right: 1px solid $bg-light-grey;
     border-left: 1px solid $bg-light-grey;
+  }
+
+  &--hit::before {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../../img/bg-hit.svg");
+    background-position: top center;
+
+    content: "";
+  }
+
+  &--hit::after {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 74px;
+    height: 73px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    content: "хит";
+
+    transform: rotate(-45deg);
   }
 }
 
@@ -68,6 +96,10 @@
   line-height: 25px;
   margin-top: 10px;
   margin-bottom: 0;
+
+  @media (min-width: $viewpoint--desktop) {
+    font-size: 18px;
+  }
 }
 
 .pricing__price {
@@ -77,6 +109,10 @@
 
   margin-top: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $viewpoint--desktop) {
+    font-size: 24px;
+  }
 }
 
 .pricing__features-list {
@@ -90,13 +126,37 @@
   line-height: 30px;
   height: 59px;
 
+  display: flex;
+  justify-content: space-between;
+
   padding-left: 20px;
+  padding-right: 20px;
 
   text-transform: uppercase;
 
   border: 1px solid $color-grey;
   background-color: $color-white;
+
+  @media (min-width: $viewpoint--tablet) {
+    justify-content: center;
+  }
 }
+
+.pricing__features-text {
+  @media (min-width: $viewpoint--tablet) {
+    display: none;
+  }
+}
+
+.pricing__features-yes {
+  width: 31px;
+  fill: $color-green-yes;
+}
+
+.pricing__features-no {
+  fill: $color-red-no;
+}
+
 
 .pricing__legend {
   display: none;
@@ -132,5 +192,7 @@
 
   @media (min-width: $viewpoint--desktop) {
     width: 234px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }

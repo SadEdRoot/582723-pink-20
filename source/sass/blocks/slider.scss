@@ -4,10 +4,41 @@
   overflow: hidden;
 }
 
+.slider__quotes {
+  display: none;
+
+  @media (min-width: $viewpoint--desktop) {
+    display: block;
+    margin: 0 auto;
+    padding-top: 70px;
+    fill: $color-quotes;
+  }
+}
+
 .slider__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.slider__arrow {
+  display: none;
+
+  @media (min-width: $viewpoint--desktop) {
+    display: block;
+    position: absolute;
+    fill: rgba($color-navi, 0.3);
+    top: 215px;
+  }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+
 }
 
 .slider__card {
@@ -22,6 +53,13 @@
     @media (min-width: $viewpoint--tablet) {
       flex-direction: column-reverse;
       margin-top: 100px;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      margin-top: 58px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

@@ -45,4 +45,10 @@
       width: 183px;
     }
   }
+
+  &--download {
+    @media (min-width: $viewpoint--desktop) {
+      font-size: 21px;
+    }
+  }
 }

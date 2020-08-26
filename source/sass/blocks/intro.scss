@@ -152,7 +152,8 @@
 .intro__item {
   height: 56px;
   width: 44px;
-  background-color: red;
+  display: flex;
+  justify-content: center;
 }
 
 .intro__text {
