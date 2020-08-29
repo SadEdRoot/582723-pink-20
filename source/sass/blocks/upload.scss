@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 50px;
+  width: 90%;
 
   line-height: 30px;
   text-align: center;
@@ -37,16 +38,17 @@
 
 .upload__user-photo {
   margin: 0 auto;
+  box-sizing: content-box;
 
   @media (min-width: $viewpoint--tablet) {
     width: 300px;
     height: 400px;
-    margin: 0;
+    margin: 0 auto 0 20px;
     padding-bottom: 54px;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    box-sizing: content-box;
+    margin: 0;
     padding: 0;
     padding-left: 80px;
     padding-right: 90px;
@@ -55,7 +57,9 @@
 
 .upload__panel {
   @media (min-width: $viewpoint--tablet) {
-    width: calc(50% - 10px);
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 25px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -63,6 +67,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.upload__mobile-icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding-top: 40px;
+
+  @media (min-width: $viewpoint--tablet) {
+    display: none;
   }
 }
 
@@ -77,6 +93,32 @@
     margin: 0;
   }
 }
+
+.upload__handel-wrapper {
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  padding: 0 40px;
+  display: none;
+
+  border-bottom: 1px solid rgba($color-navi, 0.1);
+
+  &--active {
+    display: flex;
+  }
+
+  @media (min-width: $viewpoint--tablet) {
+    display: flex;
+    padding: 0;
+  }
+
+  &--noboard {
+    @media (min-width: $viewpoint--desktop) {
+      border-bottom: none;
+    }
+  }
+}
+
 
 .upload__btn {
   margin-top: 10px;
@@ -99,7 +141,6 @@
 
   @media (min-width: $viewpoint--tablet) {
     flex-direction: column;
-    padding-left: 25px;
     gap: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -157,6 +198,22 @@
 
   &--contrast {
     left: 60%;
+  }
+}
+
+.upload__icon {
+  display: none;
+  fill: $color-magenta;
+
+  @media (min-width: $viewpoint--tablet) {
+    display: block;
+    height: 25px;
+    width: 25px;
+  }
+
+  &--small {
+    height: 16px;
+    width: 16px;
   }
 }
 
@@ -226,9 +283,3 @@
   }
 }
 
-.upload__handel-wrapper {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  align-items: center;
-}

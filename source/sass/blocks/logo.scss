@@ -1,4 +1,41 @@
 .logo {
-  width: 74px;
-  height: 23px;
+  &:hover {
+    fill: $color-magenta;
+  }
+
+  &--mobile {
+    width: 74px;
+    height: 23px;
+
+    @media (min-width: $viewpoint--tablet) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    width: 145px;
+    height: 40px;
+    display: none;
+
+    @media (min-width: $viewpoint--tablet) {
+      display: block;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    width: 147px;
+    height: 40px;
+    display: none;
+
+    @media (min-width: $viewpoint--desktop) {
+      display: block;
+    }
+    &:hover {
+      fill: $color-magenta;
+    }
+  }
 }
