@@ -45,4 +45,16 @@
       width: 183px;
     }
   }
+
+  &--xl-desktop {
+    @media (min-width: $viewpoint--desktop) {
+      width: 460px;
+    }
+  }
+
+  &--download {
+    @media (min-width: $viewpoint--desktop) {
+      font-size: 21px;
+    }
+  }
 }

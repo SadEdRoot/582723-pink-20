@@ -32,4 +32,9 @@
   display: flex;
   gap: 15px;
   align-items: center;
+
+  @media (min-width: $viewpoint--desktop) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }

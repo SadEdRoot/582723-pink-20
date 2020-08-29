@@ -105,6 +105,7 @@
 }
 
 .photo__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 25px 10px 25px 17px;
@@ -115,6 +116,7 @@
 
   @media (min-width: $viewpoint--tablet) {
     min-height: 171px;
+    padding: 30px;
   }
 
   p {
@@ -139,4 +141,35 @@
 
   font-size: 12px;
   color: $color-magenta;
+}
+
+.photo__like {
+  svg {
+    fill: $color-magenta;
+  }
+}
+
+.photo__like-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 10px;
+  height: auto;
+
+  @media (min-width: $viewpoint--tablet) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+
+  &--daily {
+    @media (min-width: $viewpoint--tablet) {
+      position: absolute;
+      right: 30px;
+      width: 120px;
+      padding-top: 0;
+      gap: 0;
+    }
+  }
 }
