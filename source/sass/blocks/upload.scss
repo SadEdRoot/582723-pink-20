@@ -121,6 +121,7 @@
 
   &--tablet {
     display: none;
+
     @media (min-width: $viewpoint--tablet) {
       display: block;
       margin-top: 30px;
@@ -160,7 +161,6 @@
 }
 
 .upload__crop-btn {
-
   @media (min-width: $viewpoint--tablet) {
     height: 22px;
     width: 22px;
@@ -179,6 +179,7 @@
 
   svg {
     fill: rgba($color-navi, 0.3);
+
     @media (min-width: $viewpoint--tablet) {
       fill: $color-magenta;
     }
@@ -193,6 +194,7 @@
 
   svg {
     fill: rgba($color-navi, 0.3);
+
     @media (min-width: $viewpoint--tablet) {
       fill: $color-magenta;
     }
