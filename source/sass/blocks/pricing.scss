@@ -1,32 +1,158 @@
 .pricing {
   width: 100%;
-
   background-color: $bg-light-grey;
+
+  padding-top: 130px;
+  padding-bottom: 100px;
 }
 
 .pricing__list {
+  overflow: hidden;
+  position: relative;
+
   margin: 0;
   padding: 0;
-
+  display: flex;
+  width: 840px;
   list-style: none;
+
+  left: 50%;
+  transform: translateX(calc(-50% - 20px));
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $viewpoint--tablet) {
+    width: 620px;
+    margin: 0 auto;
+
+    left: 0;
+    transform: none;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 940px;
+  }
+}
+
+.pricing__item {
+  width: 280px;
+  flex-shrink: 0;
+
+  @media (min-width: $viewpoint--tablet) {
+    width: 155px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 235px;
+  }
 }
 
 
 .pricing__header {
+  position: relative;
+  text-align: center;
+  height: 94px;
   line-height: 30px;
   color: $color-white;
 
+  border: 2px solid $bg-navy;
+
   background-color: $bg-navy;
+
+  @media (min-width: $viewpoint--tablet) {
+    height: 75px;
+  }
+
+  &--inner {
+    border-right: 1px solid $bg-light-grey;
+    border-left: 1px solid $bg-light-grey;
+  }
+
+  &--hit::before {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../../img/bg-hit.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    content: "";
+
+    @media (min-width: $viewpoint--tablet) {
+      background-image: url("../../img/bg-hit-tablet.svg");
+      width: 60px;
+      height: 60px;
+      left: 0;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      width: 75px;
+      height: 75px;
+      background-image: url("../../img/bg-hit.svg");
+    }
+  }
+
+  &--hit::after {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 74px;
+    height: 73px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    content: "хит";
+
+    transform: rotate(-45deg);
+
+    @media (min-width: $viewpoint--tablet) {
+      left: 0;
+      top: 0;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      left: 3px;
+      top: 4px;
+    }
+  }
 }
 
 .pricing__type {
   font-weight: bold;
   font-size: 16px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    font-size: 18px;
+  }
 }
 
 .pricing__price {
   font-weight: 300;
   font-size: 18px;
+  line-height: 30px;
+
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: -5px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    font-size: 24px;
+  }
 }
 
 .pricing__features-list {
@@ -38,6 +164,81 @@
 
 .pricing__features-item {
   line-height: 30px;
+  height: 59px;
 
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-transform: uppercase;
+
+  border: 1px solid $color-grey;
   background-color: $color-white;
+
+  @media (min-width: $viewpoint--tablet) {
+    justify-content: center;
+  }
+}
+
+.pricing__features-text {
+  @media (min-width: $viewpoint--tablet) {
+    display: none;
+  }
+}
+
+.pricing__features-yes {
+  width: 31px;
+  fill: $color-green-yes;
+}
+
+.pricing__features-no {
+  fill: $color-red-no;
+}
+
+
+.pricing__legend {
+  display: none;
+
+  @media (min-width: $viewpoint--tablet) {
+    display: block;
+    padding-top: 75px;
+  }
+}
+
+.pricing__legend-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pricing__legend-item {
+  display: flex;
+  align-items: center;
+  height: 59px;
+  width: 153px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  padding-left: 15px;
+
+  border: 1px solid $color-grey;
+  background-color: $color-white;
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 234px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.pricing__toggles {
+  @media (min-width: $viewpoint--tablet) {
+    display: none;
+  }
 }

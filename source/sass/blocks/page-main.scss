@@ -44,4 +44,29 @@
 .page-main__description {
   line-height: 30px;
   text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: $viewpoint--tablet) {
+    font-size: 18px;
+    width: 75%;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 760px;
+  }
+}
+
+.page-main__additional-desc {
+  display: none;
+
+  @media (min-width: $viewpoint--tablet) {
+    display: block;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    display: inline;
+  }
 }
