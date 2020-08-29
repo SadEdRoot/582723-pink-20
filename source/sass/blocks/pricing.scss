@@ -7,12 +7,17 @@
 }
 
 .pricing__list {
+  overflow: hidden;
+  position: relative;
+
   margin: 0;
   padding: 0;
   display: flex;
   width: 840px;
-  //transform: translateX(-280px);
   list-style: none;
+
+  left: 50%;
+  transform: translateX(calc(-50% - 20px));
 
   margin-left: 20px;
   margin-right: 20px;
@@ -20,6 +25,9 @@
   @media (min-width: $viewpoint--tablet) {
     width: 620px;
     margin: 0 auto;
+
+    left: 0;
+    transform: none;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -32,11 +40,11 @@
   flex-shrink: 0;
 
   @media (min-width: $viewpoint--tablet) {
-    width: 152px;
+    width: 155px;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    width: 233px;
+    width: 235px;
   }
 }
 
@@ -70,8 +78,22 @@
 
     background-image: url("../../img/bg-hit.svg");
     background-position: top center;
+    background-repeat: no-repeat;
 
     content: "";
+
+    @media (min-width: $viewpoint--tablet) {
+      background-image: url("../../img/bg-hit-tablet.svg");
+      width: 60px;
+      height: 60px;
+      left: 0;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      width: 75px;
+      height: 75px;
+      background-image: url("../../img/bg-hit.svg");
+    }
   }
 
   &--hit::after {
@@ -87,6 +109,16 @@
     content: "хит";
 
     transform: rotate(-45deg);
+
+    @media (min-width: $viewpoint--tablet) {
+      left: 0;
+      top: 0;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      left: 3px;
+      top: 4px;
+    }
   }
 }
 
@@ -96,6 +128,10 @@
   line-height: 25px;
   margin-top: 10px;
   margin-bottom: 0;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: 15px;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     font-size: 18px;
@@ -109,6 +145,10 @@
 
   margin-top: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: -5px;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     font-size: 24px;
@@ -194,5 +234,11 @@
     width: 234px;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.pricing__toggles {
+  @media (min-width: $viewpoint--tablet) {
+    display: none;
   }
 }

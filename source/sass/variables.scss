@@ -4,6 +4,7 @@ $color-white: #ffffff;
 $color-black: #000000;
 $color-navi: #283645;
 $color-grey: #e5e5e5;
+$color-light-grey: #f2f2f2;
 $color-magenta: #d22856;
 $color-green: #2aab6d;
 $color-green-yes: #3dc644;
@@ -12,7 +13,7 @@ $color-quotes: #efefef;
 
 $bg-navy: $color-navi;
 $bg-dark-blue: #1d2631;
-$bg-light-grey: #f2f2f2;
+$bg-light-grey: $color-light-grey;
 $bg-grey: $color-grey;
 
 
