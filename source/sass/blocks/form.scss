@@ -160,6 +160,15 @@
 
   border: 2px solid $color-grey;
   border-radius: 1px;
+
+  &:hover {
+    border: 2px solid $color-navi;
+  }
+
+  &:focus {
+    border: 2px solid $color-magenta;
+    outline: none;
+  }
 }
 
 .form__checkbox-wrapper {
@@ -173,6 +182,22 @@
 .form__checkbox {
   position: absolute;
   appearance: none;
+
+  &:checked .form__checkbox-yes {
+    fill: #3dc644;
+  }
+
+  &:hover + label::before {
+    border-color: $color-navi;
+  }
+
+  &:focus + label::before {
+    border-color: $color-navi;
+  }
+
+  &:active + label::before {
+    border-color: $color-magenta;
+  }
 }
 
 .form__checkbox-label {
@@ -197,9 +222,18 @@
     width: 35px;
     height: 35px;
     border: 2px solid $color-grey;
+    border-radius: 1px;
     content: "";
     z-index: 1;
   }
+
+  &:checked {
+    background-color: #3dc644;
+  }
+}
+
+.form__checkbox-yes {
+  fill: white;
 }
 
 .form__radio {

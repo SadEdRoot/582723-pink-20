@@ -28,6 +28,20 @@
     background: $color-green;
     border-color: $color-green;
     border-radius: 1px;
+
+    &:hover {
+      background: $color-dark-green;
+      border-color: $color-dark-green;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
+
+    &:disabled {
+      background: $color-grey;
+      border-color: $color-grey;
+    }
   }
 
   &--red {

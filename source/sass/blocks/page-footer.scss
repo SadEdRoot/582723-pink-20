@@ -29,12 +29,32 @@
 
 .page-footer__creator {
   line-height: 18px;
-  display: flex;
-  gap: 15px;
-  align-items: center;
 
   @media (min-width: $viewpoint--desktop) {
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+.page-footer__academy {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: $color-navi;
+
+  svg {
+    fill: $color-magenta;
+  }
+
+  &:hover {
+    svg {
+      fill: $color-navi;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba($color-navi, 0.3);
+    }
   }
 }
