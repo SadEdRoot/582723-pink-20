@@ -23,6 +23,32 @@
   }
 }
 
+.page-footer__logo {
+  fill: $color-navi;
+
+  &:hover {
+    fill: $color-magenta;
+  }
+
+  &:active {
+    fill: rgba($color-navi, 0.3);
+  }
+
+  &--modile {
+    @media (min-width: $viewpoint--desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $viewpoint--desktop) {
+      display: block;
+    }
+  }
+}
+
 .page-footer__list {
   list-style: none;
 }

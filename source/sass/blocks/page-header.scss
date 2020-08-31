@@ -49,6 +49,12 @@
   height: 23px;
   width: 23px;
   margin-right: 20px;
+  cursor: pointer;
+
+
+  &--active {
+    fill: $color-magenta;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     display: none;
