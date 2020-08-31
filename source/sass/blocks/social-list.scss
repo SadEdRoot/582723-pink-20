@@ -6,10 +6,30 @@
   margin: 0;
 }
 
-.social-list__item {
+.social-list__link {
+  display: flex;
   width: 48px;
   height: 48px;
 
+  justify-content: center;
+  align-items: center;
+
   border: 3px solid rgba($color-navi, 0.1);
   border-radius: 50%;
+
+  svg {
+    fill: $color-magenta;
+  }
+
+  &:hover {
+    border-color: $color-navi;
+  }
+
+  &:active {
+    border-color: rgba($color-navi, 0.1);
+
+    svg {
+      fill: rgba($color-magenta, 0.3);
+    }
+  }
 }
