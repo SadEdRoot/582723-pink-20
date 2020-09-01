@@ -69,16 +69,16 @@
     <nav class="page-header__nav main-nav main-nav--no-js">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a>Главная</a>
+          <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="photo.html">Фотография</a>
+          <a class="main-nav__link" href="photo.html">Фотография</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
+          <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -89,14 +89,17 @@
   <section class="intro">
     <div class="intro__container">
       <div class="intro__banner">
-          <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+        <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
           <img
             class="intro__mobile-hand"
             src="img/iphone-hand-mobile@1x.png"
-            alt="Заглушка"
-            width="258"
-            height="286"
+            srcset="img/iphone-hand-mobile@2x.png"
+            alt="Рука с телефоном"
           />
+        </picture>
       </div>
       <div class="intro__content">
         <a class="intro__download btn btn--download btn--main" href="#">
@@ -142,13 +145,16 @@
     <div class="information__feature feature">
       <ul class="feature__list">
         <li class="feature__item">
-          <img
-            class="feature__image"
-            src="img/iphone-screen-1-desktop@1x.png"
-            alt="Заглушка"
-            width="282"
-            height="302"
-          />
+          <picture>
+            <img
+              class="feature__image"
+              src="img/iphone-screen-1-desktop@1x.png"
+              srcset="img/iphone-screen-1-desktop@2x.png"
+              alt="Телефон с приложением"
+              width="282"
+              height="302"
+            />
+          </picture>
           <h3 class="feature__header">Поднимаем настроение</h3>
           <p  class="feature__text">
             Приложение позволит вам победить осеннюю хандру и депрессию
@@ -159,7 +165,8 @@
           <img
             class="feature__image"
             src="img/iphone-screen-2-desktop@1x.png"
-            alt="Заглушка"
+            alt="Телефон с приложением"
+            srcset="img/iphone-screen-2-desktop@2x.png"
             width="282"
             height="302"
           />
@@ -173,7 +180,8 @@
           <img
             class="feature__image"
             src="img/iphone-screen-3-desktop@1x.png"
-            alt="Заглушка"
+            alt="Телефон с приложением"
+            srcset="img/iphone-screen-3-desktop@2x.png"
             width="282"
             height="302"
           />
@@ -184,23 +192,27 @@
           </p>
         </li>
       </ul>
-      <img
-        class="feature__mobile-app"
-        src="img/iphone-screen-mobile@1x.png"
-        alt="Заглушка"
-        width="157"
-        height="320"
-      />
+      <picture>
+        <img
+          class="feature__mobile-app"
+          src="img/iphone-screen-mobile@1x.png"
+          alt="Телефон с приложением"
+          srcset="img/iphone-screen-mobile@2x.png"
+          width="157"
+          height="320"
+        />
+      </picture>
     </div>
     <div class="information__fact">
       <div class="information__wrapper">
-        <img
-          class="information__clock"
-          src="img/icon-timer.svg"
-          alt="Заглушка"
-          width="238"
-          height="276"
-        />
+        <div class="information__clock-wrapper">
+          <svg class="information__clock" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+          <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+        </svg>
+        <div class="information__24hour">
+          24
+        </div>
+        </div>
         <div class="information__fact-content">
           <p class="information__fact-title">Эффект на 24 часа!</p>
           <p class="information__fact-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -372,7 +384,7 @@
       </div>
       <div class="contacts__contact">
         <p class="contacts__type">Пишите:</p>
-        <a class="contacts__text" href="mailto:mail@htmlacademy.ru" aria-label="Почта компании">mail@htmlacademy.ru</a>
+        <a class="contacts__text contacts__text--mail" href="mailto:mail@htmlacademy.ru" aria-label="Почта компании">mail@htmlacademy.ru</a>
       </div>
       <div class="contacts__contact contacts__contact--street">
         <p class="contacts__type">Приезжайте в гости:</p>

@@ -38,6 +38,8 @@
 
   @media (min-width: $viewpoint--desktop) {
     width: auto;
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 }
 
@@ -58,5 +60,12 @@
 
   @media (min-width: $viewpoint--desktop) {
     display: none;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $viewpoint--desktop) {
+    display: flex;
+    align-items: center;
   }
 }
