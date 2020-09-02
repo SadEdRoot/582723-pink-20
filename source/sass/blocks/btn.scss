@@ -45,10 +45,38 @@
     }
   }
 
-  &--red {
+  &--send {
     color: $color-magenta;
 
     border-color: $color-magenta;
+
+    &:hover {
+      color: $color-white;
+      background: $color-magenta;
+      border-color: $color-magenta;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
+  }
+
+  &--reset {
+    border: 3px solid $color-navi;
+    color: $color-navi;
+    opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+      border: 3px solid $color-navi;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: $color-white;
+      border: 3px solid $color-navi;
+      background-color: $color-navi;
+    }
   }
 
   &--small-size {
