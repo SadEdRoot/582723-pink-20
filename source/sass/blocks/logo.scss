@@ -1,6 +1,12 @@
 .logo {
+  fill: $color-white;
+
   &:hover {
     fill: $color-magenta;
+  }
+
+  &:active {
+    fill: rgba($color-white, 0.3);
   }
 
   &--mobile {

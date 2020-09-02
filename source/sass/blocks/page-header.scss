@@ -38,6 +38,8 @@
 
   @media (min-width: $viewpoint--desktop) {
     width: auto;
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 }
 
@@ -49,8 +51,21 @@
   height: 23px;
   width: 23px;
   margin-right: 20px;
+  cursor: pointer;
+
+
+  &--active {
+    fill: $color-magenta;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     display: none;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $viewpoint--desktop) {
+    display: flex;
+    align-items: center;
   }
 }
