@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/bg-back-tablet@2x.jpg");
     }
   }
@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../../img/bg-back-desktop@2x.jpg");
     }
   }
@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
   }
 
