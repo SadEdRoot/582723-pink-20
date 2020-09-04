@@ -23,11 +23,21 @@
 
 .slider__arrow {
   display: none;
+  fill: $color-navi;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     display: block;
     position: absolute;
-    fill: rgba($color-navi, 0.3);
     top: 215px;
   }
 
@@ -141,11 +151,25 @@
   width: 12px;
   height: 12px;
   border: 3px solid transparent;
-  background-color: rgba($color-navi, 0.2);
+  background-color: rgba($color-navi, 0.3);
   background-clip: padding-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-navi, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-navi, 0.1);
+  }
 
   &--current {
     border: 3px solid $color-navi;
     background-color: transparent;
+    cursor: auto;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }

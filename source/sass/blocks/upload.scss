@@ -188,6 +188,10 @@
   left: 80%;
   transform: translateX(-50%);
 
+  &:active {
+    background: $color-magenta;
+  }
+
   &--crop {
     left: 26%;
   }
@@ -217,43 +221,31 @@
   }
 }
 
-.upload__crop-btn {
-  @media (min-width: $viewpoint--tablet) {
-    height: 22px;
-    width: 22px;
-  }
-
-  svg {
-    fill: $color-magenta;
-  }
-}
-
-.upload__fill-btn {
-  @media (min-width: $viewpoint--tablet) {
-    height: 22px;
-    width: 24px;
-  }
+.upload__link {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   svg {
     fill: rgba($color-navi, 0.3);
+  }
 
-    @media (min-width: $viewpoint--tablet) {
-      fill: $color-magenta;
+  &:hover {
+    svg {
+      fill: rgba($color-navi, 0.5);
     }
   }
-}
 
-.upload__contrast-btn {
-  @media (min-width: $viewpoint--tablet) {
-    height: 16px;
-    width: 16px;
-  }
-
-  svg {
-    fill: rgba($color-navi, 0.3);
-
-    @media (min-width: $viewpoint--tablet) {
+  &--active {
+    svg {
       fill: $color-magenta;
+    }
+
+    &:hover {
+      svg {
+        fill: $color-magenta;
+      }
     }
   }
 }
