@@ -22,6 +22,7 @@
 
   @media (min-width: $viewpoint--desktop) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -63,7 +64,7 @@
   padding-top: 100px;
 
   @media (min-width: $viewpoint--desktop) {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   background-image: url("../../img/bg-triangle-white.svg");
@@ -83,6 +84,7 @@
 
   @media (min-width: $viewpoint--desktop) {
     background-color: $bg-light-grey;
+    padding-top: 50px;
   }
 }
 
@@ -172,6 +174,8 @@
 
   @media (min-width: $viewpoint--desktop) {
     line-height: 30px;
+    margin-top: 95px;
+    margin-bottom: 9px;
   }
 }
 
@@ -182,6 +186,7 @@
   @media (min-width: $viewpoint--desktop) {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 30px;
   }
 }
 

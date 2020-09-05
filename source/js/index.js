@@ -12,6 +12,6 @@ if (navToggle) {
     e.preventDefault();
     nav.classList.toggle('main-nav--open');
     header.classList.toggle('page-header--close');
-    navToggle.classList.toggle('page-header__toggle-btn--active');
+    navToggle.classList.toggle('page-header__burger-btn--active');
   })
 }

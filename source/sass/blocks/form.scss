@@ -183,8 +183,18 @@
   position: absolute;
   appearance: none;
 
-  &:checked .form__checkbox-yes {
-    fill: #3dc644;
+  &:checked + label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background-image: url("../../img/icon-yes-red.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    z-index: 1;
   }
 
   &:hover + label::before {
@@ -226,10 +236,6 @@
     content: "";
     z-index: 1;
   }
-
-  &:checked {
-    background-color: #3dc644;
-  }
 }
 
 .form__checkbox-yes {
@@ -239,6 +245,31 @@
 .form__radio {
   position: absolute;
   appearance: none;
+
+  &:checked + label::after {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: $color-magenta;
+    border-radius: 50%;
+    content: "";
+    z-index: 1;
+  }
+
+  &:hover + label::before {
+    border-color: $color-navi;
+  }
+
+  &:focus + label::before {
+    border-color: $color-navi;
+  }
+
+  &:active + label::before {
+    border-color: $color-magenta;
+  }
 }
 
 .form__radio-label {

@@ -48,18 +48,47 @@
 }
 
 .page-header__burger-btn {
-  height: 23px;
-  width: 23px;
   margin-right: 20px;
   cursor: pointer;
 
+  background-color: transparent;
+  color: $color-white;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 
-  &--active {
-    fill: $color-magenta;
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: $color-magenta;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $viewpoint--desktop) {
     display: none;
+  }
+
+  .page-header__menu-burger {
+    display: block;
+  }
+
+  .page-header__menu-cross {
+    display: none;
+  }
+
+  &--active {
+    .page-header__menu-burger {
+      display: none;
+    }
+
+    .page-header__menu-cross {
+      display: block;
+    }
   }
 }
 
