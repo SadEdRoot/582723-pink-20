@@ -155,7 +155,7 @@
           <h3 class="feature__header">Меняет мир вокруг</h3>
           <p  class="feature__text">
             Сделайте снимок и украсьте его смайликом или текстовой подписью,
-            чтобы усилить эффект
+            чтобы усилить&nbspэффект
           </p>
         </li>
         <li class="feature__item">
@@ -167,21 +167,26 @@
             width="292"
             height="302"
           />
-          <h3 class="feature__header">Заводит новых друзей</h3>
+          <h3 class="feature__header">Заводит новых&nbspдрузей</h3>
           <p  class="feature__text">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
             заводите новых
           </p>
         </li>
       </ul>
-      <img
-        class="feature__mobile-app"
-        src="img/iphone-screen-mobile@1x.png"
-        alt="Телефон с приложением"
-        srcset="img/iphone-screen-mobile@2x.png 2x"
-        width="157"
-        height="320"
-      />
+      <picture>
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+        <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+        <img
+          class="feature__mobile-app"
+          src="img/iphone-screen-mobile@1x.png"
+          alt="Телефон с приложением"
+          srcset="img/iphone-screen-mobile@2x.png 2x"
+          width="157"
+          height="320"
+        />
+      </picture>
     </div>
     <div class="information__fact">
       <div class="information__wrapper">
@@ -194,8 +199,8 @@
         </div>
         </div>
         <div class="information__fact-content">
-          <p class="information__fact-title">Эффект на 24 часа!</p>
-          <p class="information__fact-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="information__fact-title">Эффект на&nbsp24&nbspчаса!</p>
+          <p class="information__fact-text">Британские ученые провели исследования и доказали, что&nbspположительный эффект от&nbspиспользования приложения длится целые&nbspсутки!</p>
           <a class="information__fact-link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -341,10 +346,10 @@
           </ul>
         </li>
       </ul>
-      <ul class="pricing__toggles slider__toggles">
-        <li><button class="slider__toggle" type="button" aria-label="1"></button></li>
-        <li><button class="slider__toggle slider__toggle--current" type="button" aria-label="2"></button></li>
-        <li><button class="slider__toggle" type="button" aria-label="3"></button></li>
+      <ul class="pricing__toggles">
+        <li><button class="pricing__toggle" type="button" aria-label="1"></button></li>
+        <li><button class="pricing__toggle slider__toggle--current" type="button" aria-label="2"></button></li>
+        <li><button class="pricing__toggle" type="button" aria-label="3"></button></li>
       </ul>
     </div>
   </section>
@@ -366,24 +371,16 @@
           Конюшенная, 19/8</p>
       </div>
     </div>
-    <picture>
-      <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-      <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-      <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-      <img
-        class="contacts__map"
-        src="img/bg-map-mobile@1x.png"
-        srcset="img/bg-map-mobile@2x.jpg 2x"
-        alt="Карта проезда"
-        width="320"
-        height="200"/>
-    </picture>
+    <div class="contacts__map-wrapper">
+      <svg class="contacts__triangle" x="0px" y="0px" width="595" height="62" viewBox="0 0 595 62">
+        <polygon fill="#FFFFFF" points="297.64,61.905 0,0 595.28,0 "/>
+      </svg>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.211716343138!2d30.321351722835136!3d59.939058474054754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2snz!4v1599392640337!5m2!1sen!2snz" width="320" height="200" frameborder="0" style="border: 0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+    </div>
   </section>
 </main>
 <footer class="page-footer container">
-  <a>
+  <a href="index.html">
     <svg class="page-footer__logo page-footer__logo--modile" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="146" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
       <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
       <path d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>

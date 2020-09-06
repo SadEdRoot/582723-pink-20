@@ -27,9 +27,12 @@
   @media (min-width: $viewpoint--tablet) {
     grid-area: 1 / 2 / 2 /3;
     min-width: 300px;
+    padding-top: 55px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $viewpoint--desktop) {
+    padding: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,6 +45,7 @@
 
   @media (min-width: $viewpoint--tablet) {
     text-align: left;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -79,6 +83,12 @@
   transform: translateY(40px);
   object-fit: contain;
   object-position: top;
+
+  @media (min-width: $viewpoint--tablet) {
+    margin: 0;
+    width: 87%;
+    transform: none;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     display: none;

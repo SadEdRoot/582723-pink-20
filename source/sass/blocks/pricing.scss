@@ -3,13 +3,19 @@
   background-color: $bg-light-grey;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  background-position: top right;
 
-  padding-top: 130px;
-  padding-bottom: 100px;
+  padding-top: 103px;
+  padding-bottom: 30px;
+
+  @media (min-width: $viewpoint--tablet) {
+    padding-top: 97px;
+    padding-bottom: 34px;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     padding-top: 157px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
 }
 
@@ -17,17 +23,15 @@
   overflow: hidden;
   position: relative;
 
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
   display: flex;
   width: 840px;
   list-style: none;
+  padding-bottom: 34px;
 
   left: 50%;
   transform: translateX(calc(-50% - 20px));
-
-  margin-left: 20px;
-  margin-right: 20px;
 
   @media (min-width: $viewpoint--tablet) {
     width: 620px;
@@ -68,7 +72,7 @@
   background-color: $bg-navy;
 
   @media (min-width: $viewpoint--tablet) {
-    height: 75px;
+    height: 79px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -138,7 +142,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 0;
 
   @media (min-width: $viewpoint--tablet) {
@@ -160,7 +164,7 @@
   margin-bottom: 12px;
 
   @media (min-width: $viewpoint--tablet) {
-    margin-top: -5px;
+    margin-top: -3px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -193,6 +197,11 @@
 
   @media (min-width: $viewpoint--tablet) {
     justify-content: center;
+    height: 47px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    height: 62px;
   }
 }
 
@@ -217,7 +226,7 @@
 
   @media (min-width: $viewpoint--tablet) {
     display: block;
-    padding-top: 75px;
+    padding-top: 79px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -248,15 +257,62 @@
   border: 1px solid $color-grey;
   background-color: $color-white;
 
+  @media (min-width: $viewpoint--tablet) {
+    height: 47px;
+  }
+
   @media (min-width: $viewpoint--desktop) {
     width: 234px;
     font-size: 18px;
     line-height: 30px;
+    height: 62px;
+    padding-left: 20px;
   }
 }
 
 .pricing__toggles {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  padding: 0;
+  list-style: none;
+
   @media (min-width: $viewpoint--tablet) {
     display: none;
+  }
+}
+
+.pricing__toggle {
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid transparent;
+  background-color: rgba($color-navi, 0.3);
+  background-clip: padding-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-navi, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-navi, 0.1);
+  }
+
+  &--current {
+    border: 3px solid $color-navi;
+    background-color: transparent;
+    cursor: auto;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }

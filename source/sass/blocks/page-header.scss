@@ -41,10 +41,15 @@
   padding-bottom: 23px;
   box-shadow: 0 1px 0 $color-black;
 
+  @media (min-width: $viewpoint--tablet) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
   @media (min-width: $viewpoint--desktop) {
     width: auto;
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 }
 
