@@ -8,6 +8,10 @@
 
   &--close {
     background-color: rgba($color-black, 0.3);
+
+    .page-header__header-wrapper {
+      box-shadow: none;
+    }
   }
 
   @media (min-width: $viewpoint--tablet) {
@@ -34,7 +38,8 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 22px;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
+  box-shadow: 0 1px 0 $color-black;
 
   @media (min-width: $viewpoint--desktop) {
     width: auto;

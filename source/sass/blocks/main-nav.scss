@@ -33,6 +33,7 @@
   font-size: 18px;
   line-height: 32px;
   color: $color-white;
+  margin-top: 1px;
 
   background-color: $bg-navy;
   box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -57,8 +58,9 @@
 .main-nav__link {
   display: block;
 
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-top: 16px;
+  text-transform: uppercase;
 
   @media (min-width: $viewpoint--desktop) {
     padding-bottom: 10px;

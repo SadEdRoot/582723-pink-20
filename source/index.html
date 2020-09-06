@@ -59,7 +59,7 @@
           <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="photo.html">Фотография</a>
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -78,6 +78,9 @@
       <div class="intro__banner">
         <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
         <picture>
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
           <img
@@ -164,7 +167,7 @@
             width="292"
             height="302"
           />
-          <h3 class="feature__header">Заводит<br>новых друзей</h3>
+          <h3 class="feature__header">Заводит новых друзей</h3>
           <p  class="feature__text">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
             заводите новых
@@ -198,7 +201,7 @@
       </div>
     </div>
   </section>
-  <section class="reviews">
+  <section>
     <h2 class="visually-hidden">Отзывы пользователей</h2>
     <div class="container">
       <div class="slider">
@@ -363,13 +366,20 @@
           Конюшенная, 19/8</p>
       </div>
     </div>
-    <img
-      class="contacts__map"
-      src="img/bg-map-mobile@1x.png"
-      srcset="img/bg-map-mobile@2x.jpg 2x"
-      alt="Карта проезда"
-      width="320"
-      height="200"/>
+    <picture>
+      <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+      <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+      <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+      <img
+        class="contacts__map"
+        src="img/bg-map-mobile@1x.png"
+        srcset="img/bg-map-mobile@2x.jpg 2x"
+        alt="Карта проезда"
+        width="320"
+        height="200"/>
+    </picture>
   </section>
 </main>
 <footer class="page-footer container">

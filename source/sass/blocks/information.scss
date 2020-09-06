@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 170px;
+  min-height: 187px;
 
   padding-top: 40px;
   padding-bottom: 0;
@@ -32,7 +32,7 @@
 
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 30px;
   text-align: center;
   color: $color-navi;
 
@@ -61,7 +61,7 @@
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 100px;
+  padding-top: 93px;
 
   @media (min-width: $viewpoint--desktop) {
     padding-top: 0;
@@ -69,6 +69,7 @@
 
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  background-position: top center;
 
   background-color: $bg-light-grey;
 }
