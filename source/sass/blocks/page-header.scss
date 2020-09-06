@@ -8,6 +8,10 @@
 
   &--close {
     background-color: rgba($color-black, 0.3);
+
+    .page-header__header-wrapper {
+      box-shadow: none;
+    }
   }
 
   @media (min-width: $viewpoint--tablet) {
@@ -34,12 +38,18 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 22px;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
+  box-shadow: 0 1px 0 $color-black;
+
+  @media (min-width: $viewpoint--tablet) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
 
   @media (min-width: $viewpoint--desktop) {
     width: auto;
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 }
 
@@ -48,18 +58,47 @@
 }
 
 .page-header__burger-btn {
-  height: 23px;
-  width: 23px;
   margin-right: 20px;
   cursor: pointer;
 
+  background-color: transparent;
+  color: $color-white;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 
-  &--active {
-    fill: $color-magenta;
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: $color-magenta;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $viewpoint--desktop) {
     display: none;
+  }
+
+  .page-header__menu-burger {
+    display: block;
+  }
+
+  .page-header__menu-cross {
+    display: none;
+  }
+
+  &--active {
+    .page-header__menu-burger {
+      display: none;
+    }
+
+    .page-header__menu-cross {
+      display: block;
+    }
   }
 }
 
