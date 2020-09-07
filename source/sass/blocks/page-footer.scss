@@ -1,6 +1,6 @@
 .page-footer {
   min-width: 320px;
-  min-height: 284px;
+  min-height: 277px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -12,8 +12,11 @@
 
   @media (min-width: $viewpoint--tablet) {
     flex-direction: row;
-    min-height: 127px;
+    min-height: 120px;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $viewpoint--desktop) {
