@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Фотографии</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
 <header class="page-header page-header--close">
@@ -77,9 +77,11 @@
   </div>
     <section class="photo">
       <h2 class="visually-hidden">Галерея фотографий</h2>
-      <p class="photo__intro container">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
+      <div class="container">
+        <p class="photo__intro ">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
       <div class="photo__item photo__item--full-page">
         <span class="photo__daily">ПАНОРАМА ДНЯ</span>
         <picture>
@@ -98,7 +100,7 @@
           />
         </picture>
         <div class="photo__card">
-          <p class="photo__user-name">Анна <span class="photo__user-name--last-visit">(5 минут назад)</span></p>
+          <p class="photo__user-name">Анна <span class="photo__last-visit">(5 минут назад)</span></p>
           <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="photo__like-wrapper photo__like-wrapper--daily">
             <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -106,7 +108,7 @@
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
             </a>
-            <p class="photo__like-count">Нравиться: <span>215</span></p>
+            <p class="photo__like-count">Нравится: <span>215</span></p>
           </div>
         </div>
       </div>
@@ -128,7 +130,7 @@
             />
           </picture>
           <div class="photo__card">
-            <p class="photo__user-name">Левон <span class="last-visit">(5 часов назад)</span></p>
+            <p class="photo__user-name">Левон <span class="photo__last-visit">(5 часов назад)</span></p>
             <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -136,7 +138,7 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
-              <p class="photo__like-count">Нравиться: <span>356</span></p>
+              <p class="photo__like-count">Нравится: <span>356</span></p>
             </div>
           </div>
         </li>
@@ -157,7 +159,7 @@
             />
           </picture>
           <div class="photo__card">
-            <p class="photo__user-name">Антон <span class="last-visit">(12 часов назад)</span></p>
+            <p class="photo__user-name">Антон <span class="photo__last-visit">(12 часов назад)</span></p>
             <p class="photo__comment">Соседи будут рады!</p>
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -165,7 +167,7 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
-              <p class="photo__like-count">Нравиться: <span>666</span></p>
+              <p class="photo__like-count">Нравится: <span>666</span></p>
             </div>
           </div>
         </li>
@@ -186,7 +188,7 @@
             />
           </picture>
           <div class="photo__card">
-            <p class="photo__user-name">Борис <span class="last-visit">(20 часов назад)</span></p>
+            <p class="photo__user-name">Борис <span class="photo__last-visit">(20 часов назад)</span></p>
             <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -194,7 +196,7 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
-              <p class="photo__like-count">Нравиться: <span>215</span></p>
+              <p class="photo__like-count">Нравится: <span>215</span></p>
             </div>
           </div>
         </li>
@@ -215,7 +217,7 @@
             />
           </picture>
           <div class="photo__card">
-            <p class="photo__user-name">Сергей <span class="last-visit">(25 часов назад)</span></p>
+            <p class="photo__user-name">Сергей <span class="photo__last-visit">(25 часов назад)</span></p>
             <p class="photo__comment">Самая кубанская в мире!</p>
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -223,7 +225,7 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
-              <p class="photo__like-count">Нравиться: <span>4</span></p>
+              <p class="photo__like-count">Нравится: <span>4</span></p>
             </div>
           </div>
         </li>
@@ -244,7 +246,7 @@
             />
           </picture>
           <div class="photo__card">
-            <p class="photo__user-name">Максим <span class="last-visit">(40 часов назад)</span></p>
+            <p class="photo__user-name">Максим <span class="photo__last-visit">(40 часов назад)</span></p>
             <p class="photo__comment">Где снег-то?</p>
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -252,7 +254,7 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
-              <p class="photo__like-count">Нравиться: <span>150</span></p>
+              <p class="photo__like-count">Нравится: <span>150</span></p>
             </div>
           </div>
         </li>
@@ -273,7 +275,7 @@
             />
           </picture>
           <div class="photo__card">
-            <p class="photo__user-name">Надежда <span class="last-visit">(45 часов назад)</span></p>
+            <p class="photo__user-name">Надежда <span class="photo__last-visit">(45 часов назад)</span></p>
             <p class="photo__comment">Всем GM и взаимные лайки!</p>
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
@@ -281,7 +283,7 @@
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
-              <p class="photo__like-count">Нравиться: <span>2560</span></p>
+              <p class="photo__like-count">Нравится: <span>2560</span></p>
             </div>
           </div>
         </li>
@@ -327,25 +329,31 @@
           </div>
           <div class="upload__setting">
             <div class="upload__handel-wrapper upload__handel-wrapper--active">
-              <svg class="upload__icon" x="0" y="0" width="48" height="48">
-                <use xlink:href="img/sprite.svg#icon-crop"></use>
-              </svg>
+              <div class="upload__icon-wrapper">
+                <svg class="upload__icon" x="0" y="0" width="48" height="48">
+                  <use xlink:href="img/sprite.svg#icon-crop"></use>
+                </svg>
+              </div>
               <div class="upload__scale">
                 <span class="upload__scale-marker upload__scale-marker--crop"></span>
               </div>
             </div>
             <div class="upload__handel-wrapper">
-              <svg class="upload__icon" x="0" y="0" width="48" height="48">
-                <use xlink:href="img/sprite.svg#icon-fill"></use>
-              </svg>
+              <div class="upload__icon-wrapper">
+                <svg class="upload__icon" x="0" y="0" width="48" height="48">
+                  <use xlink:href="img/sprite.svg#icon-fill"></use>
+                </svg>
+              </div>
               <div class="upload__scale">
                 <span class="upload__scale-marker upload__scale-marker--fill"></span>
               </div>
             </div>
             <div class="upload__handel-wrapper upload__handel-wrapper--noboard">
-              <svg class="upload__icon upload__icon--small" x="0" y="0" width="32" height="32">
-                <use xlink:href="img/sprite.svg#icon-contrast"></use>
-              </svg>
+              <div class="upload__icon-wrapper">
+                <svg class="upload__icon upload__icon--small" x="0" y="0" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                </svg>
+              </div>
               <div class="upload__scale">
                 <span class="upload__scale-marker upload__scale-marker--contrast"></span>
               </div>
