@@ -114,7 +114,7 @@
 
   color: white;
 
-  background-color: rgb(235, 72, 172);
+  background-color: $color-magenta;
 
   @media (min-width: $viewpoint--tablet) {
     top: 57px;

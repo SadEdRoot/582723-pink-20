@@ -16,16 +16,10 @@ body {
   height: 100%;
 }
 
-img,
-video,
-svg {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-textarea {
-  resize: none;
 }
 
 input,

@@ -1,7 +1,7 @@
 .pricing {
   width: 100%;
   background-color: $bg-light-grey;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -91,7 +91,7 @@
     width: 74px;
     height: 73px;
 
-    background-image: url("../../img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -99,7 +99,7 @@
     content: "";
 
     @media (min-width: $viewpoint--tablet) {
-      background-image: url("../../img/bg-hit-tablet.svg");
+      background-image: url("../img/bg-hit-tablet.svg");
       width: 60px;
       height: 60px;
       left: 0;
@@ -108,7 +108,7 @@
     @media (min-width: $viewpoint--desktop) {
       width: 75px;
       height: 75px;
-      background-image: url("../../img/bg-hit.svg");
+      background-image: url("../img/bg-hit.svg");
     }
   }
 

@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header page-header--close">
   <div class="page-header__wrapper">
     <div class="page-header__header-wrapper">
@@ -50,10 +53,10 @@
         aria-label="Открыть/закрыть меню"
       >
         <svg class="page-header__menu-cross" x="0" y="0" width="24" height="24">
-          <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+          <use xlink:href="#icon-menu-cross"></use>
         </svg>
         <svg class="page-header__menu-burger" x="0" y="0" width="50" height="24">
-          <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+          <use xlink:href="#icon-menu-burger"></use>
         </svg>
       </button>
     </div>
@@ -113,7 +116,7 @@
           <div class="photo__like-wrapper photo__like-wrapper--daily">
             <a class="photo__like" href="#" aria-label="поставить лайк">
               <svg x="0" y="0" width="13" height="12">
-                <use xlink:href="img/sprite.svg#icon-like"></use>
+                <use xlink:href="#icon-like"></use>
               </svg>
             </a>
             <p class="photo__like-count">Нравится: <span>215</span></p>
@@ -145,7 +148,7 @@
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
                 <svg x="0" y="0" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <p class="photo__like-count">Нравится: <span>356</span></p>
@@ -176,7 +179,7 @@
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
                 <svg x="0" y="0" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <p class="photo__like-count">Нравится: <span>666</span></p>
@@ -207,7 +210,7 @@
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
                 <svg x="0" y="0" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <p class="photo__like-count">Нравится: <span>215</span></p>
@@ -238,7 +241,7 @@
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
                 <svg x="0" y="0" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <p class="photo__like-count">Нравится: <span>4</span></p>
@@ -269,7 +272,7 @@
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
                 <svg x="0" y="0" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <p class="photo__like-count">Нравится: <span>150</span></p>
@@ -300,7 +303,7 @@
             <div class="photo__like-wrapper">
               <a class="photo__like" href="#" aria-label="поставить лайк">
                 <svg x="0" y="0" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <p class="photo__like-count">Нравится: <span>2560</span></p>
@@ -333,17 +336,17 @@
           <div class="upload__mobile-icons">
             <a class="upload__link upload__link--active upload__link--crop" href="#" aria-label="Обрезать">
               <svg x="0" y="0" width="48" height="48" viewBox="0 0 48 48">
-                <use xlink:href="img/sprite.svg#icon-crop"></use>
+                <use xlink:href="#icon-crop"></use>
               </svg>
             </a>
             <a class="upload__link upload__link--fill" href="#" aria-label="Заливка">
               <svg x="0" y="0" width="48" height="48">
-                <use xlink:href="img/sprite.svg#icon-fill"></use>
+                <use xlink:href="#icon-fill"></use>
               </svg>
             </a>
             <a class="upload__link upload__link--contrast" href="#" aria-label="Контраст">
               <svg x="0" y="0" width="32" height="32">
-                <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                <use xlink:href="#icon-contrast"></use>
               </svg>
             </a>
           </div>
@@ -351,7 +354,7 @@
             <div class="upload__handel-wrapper upload__handel-wrapper--active">
               <div class="upload__icon-wrapper">
                 <svg class="upload__icon" x="0" y="0" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#icon-crop"></use>
+                  <use xlink:href="#icon-crop"></use>
                 </svg>
               </div>
               <div class="upload__scale">
@@ -361,7 +364,7 @@
             <div class="upload__handel-wrapper">
               <div class="upload__icon-wrapper">
                 <svg class="upload__icon" x="0" y="0" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#icon-fill"></use>
+                  <use xlink:href="#icon-fill"></use>
                 </svg>
               </div>
               <div class="upload__scale">
@@ -371,7 +374,7 @@
             <div class="upload__handel-wrapper upload__handel-wrapper--noboard">
               <div class="upload__icon-wrapper">
                 <svg class="upload__icon upload__icon--small" x="0" y="0" width="32" height="32">
-                  <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                  <use xlink:href="#icon-contrast"></use>
                 </svg>
               </div>
               <div class="upload__scale">
@@ -414,21 +417,21 @@
     <li class="social-list__item">
       <a class="social-list__link" href="#" aria-label="Мы в твиттере">
         <svg x="0" y="0" width="18" height="15">
-          <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          <use xlink:href="#icon-twitter"></use>
         </svg>
       </a>
     </li>
     <li class="social-list__item">
       <a class="social-list__link" href="#" aria-label="Наша группа в файсбуке">
         <svg x="0" y="0" width="9" height="19">
-          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          <use xlink:href="#icon-facebook"></use>
         </svg>
       </a>
     </li>
     <li class="social-list__item">
       <a class="social-list__link" href="#" aria-label="Наш youtube канал">
         <svg x="0" y="0" width="15" height="14">
-          <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          <use xlink:href="#icon-youtube"></use>
         </svg>
       </a>
     </li>

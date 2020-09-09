@@ -3,7 +3,7 @@
   display: none;
 
   @media (min-width: $viewpoint--desktop) {
-    width: auto;
+    width: 70%;
     display: block;
   }
 
@@ -70,11 +70,21 @@
 
 
     &:hover {
-      border-bottom: 2px solid $color-white;
+      color: $color-magenta;
+    }
+
+    &:active {
+      color: $color-white;
+      opacity: 0.3;
     }
 
     &--active {
       border-bottom: 2px solid $color-white;
+      pointer-events: none;
+    }
+
+    &--nopointer {
+      pointer-events: none;
     }
   }
 }
