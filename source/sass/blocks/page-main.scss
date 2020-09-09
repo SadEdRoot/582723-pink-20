@@ -3,23 +3,24 @@
 }
 
 .page-main__banner {
+  padding-top: 95px;
+  padding-bottom: 77px;
+
   background-color: $bg-navy;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 
-  padding-top: 95px;
-  padding-bottom: 77px;
-
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 
   @media (min-width: $viewpoint--tablet) {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
     padding-top: 177px;
     padding-bottom: 128px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: initial;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -30,6 +31,7 @@
   @media (min-width: $viewpoint--desktop) {
     padding-top: 171px;
     padding-bottom: 88px;
+
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -38,8 +40,8 @@
   }
 
   &--form {
-    padding-bottom: 44px;
     padding-top: 94px;
+    padding-bottom: 44px;
 
     @media (min-width: $viewpoint--tablet) {
       padding-top: 177px;
@@ -54,8 +56,8 @@
 }
 
 .page-main__title {
-  margin: 0 auto;
   width: 230px;
+  margin: 0 auto;
 
   font-weight: 300;
   font-size: 24px;
@@ -64,9 +66,10 @@
   color: $color-white;
 
   @media (min-width: $viewpoint--tablet) {
+    width: 500px;
+
     font-size: 50px;
     line-height: 68px;
-    width: 500px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -75,17 +78,19 @@
 }
 
 .page-main__description {
-  line-height: 30px;
-  text-align: center;
-  margin: 0 auto;
   width: 90%;
+  margin: 0 auto;
   padding-top: 44px;
   padding-bottom: 15px;
 
+  line-height: 30px;
+  text-align: center;
+
   @media (min-width: $viewpoint--tablet) {
-    font-size: 18px;
     padding-top: 91px;
     padding-bottom: 19px;
+
+    font-size: 18px;
   }
 
   @media (min-width: $viewpoint--desktop) {

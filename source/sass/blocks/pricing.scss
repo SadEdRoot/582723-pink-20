@@ -1,12 +1,12 @@
 .pricing {
   width: 100%;
+  padding-top: 103px;
+  padding-bottom: 30px;
+
   background-color: $bg-light-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-
-  padding-top: 103px;
-  padding-bottom: 30px;
 
   @media (min-width: $viewpoint--tablet) {
     padding-top: 97px;
@@ -20,24 +20,26 @@
 }
 
 .pricing__list {
-  overflow: hidden;
   position: relative;
+  left: 50%;
 
-  margin: 0 20px;
-  padding: 0;
   display: flex;
   width: 840px;
-  list-style: none;
+  margin: 0 20px;
+  padding: 0;
   padding-bottom: 28px;
+  overflow: hidden;
 
-  left: 50%;
+  list-style: none;
+
   transform: translateX(calc(-50% - 20px));
 
   @media (min-width: $viewpoint--tablet) {
+    left: 0;
+
     width: 620px;
     margin: 0 auto;
 
-    left: 0;
     transform: none;
   }
 
@@ -47,8 +49,8 @@
 }
 
 .pricing__item {
-  width: 280px;
   flex-shrink: 0;
+  width: 280px;
 
   @media (min-width: $viewpoint--tablet) {
     width: 155px;
@@ -62,14 +64,15 @@
 
 .pricing__header {
   position: relative;
-  text-align: center;
+
   height: 98px;
+
   line-height: 30px;
+  text-align: center;
   color: $color-white;
 
-  border: 2px solid $bg-navy;
-
   background-color: $bg-navy;
+  border: 2px solid $bg-navy;
 
   @media (min-width: $viewpoint--tablet) {
     height: 79px;
@@ -85,91 +88,98 @@
   }
 
   &--hit::before {
+    content: "";
     position: absolute;
-    left: -1px;
     top: -2px;
+    left: -1px;
+
     width: 74px;
     height: 73px;
 
     background-image: url("../img/bg-hit.svg");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
 
-    content: "";
-
     @media (min-width: $viewpoint--tablet) {
-      background-image: url("../img/bg-hit-tablet.svg");
+      left: 0;
+
       width: 60px;
       height: 60px;
-      left: 0;
+
+      background-image: url("../img/bg-hit-tablet.svg");
     }
 
     @media (min-width: $viewpoint--desktop) {
       width: 75px;
       height: 75px;
+
       background-image: url("../img/bg-hit.svg");
     }
   }
 
   &--hit::after {
+    content: "хит";
     position: absolute;
-    left: 6px;
     top: 6px;
+    left: 6px;
+
     width: 74px;
     height: 73px;
+
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
 
-    content: "хит";
-
     transform: rotate(-45deg);
 
     @media (min-width: $viewpoint--tablet) {
-      left: 0;
       top: 0;
+      left: 0;
     }
 
     @media (min-width: $viewpoint--desktop) {
-      left: 3px;
       top: 4px;
+      left: 3px;
     }
   }
 }
 
 .pricing__type {
+  margin-top: 13px;
+  margin-bottom: 0;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
-  margin-top: 13px;
-  margin-bottom: 0;
 
   @media (min-width: $viewpoint--tablet) {
     margin-top: 15px;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    font-size: 18px;
     margin-top: 17px;
+
+    font-size: 18px;
   }
 }
 
 .pricing__price {
+  margin-top: 0;
+  margin-bottom: 12px;
+
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-
-  margin-top: 0;
-  margin-bottom: 12px;
 
   @media (min-width: $viewpoint--tablet) {
     margin-top: -3px;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    font-size: 24px;
     margin-top: 2px;
+
+    font-size: 24px;
   }
 }
 
@@ -181,19 +191,17 @@
 }
 
 .pricing__features-item {
-  line-height: 30px;
-  height: 60px;
-
   display: flex;
   justify-content: space-between;
-
-  padding-left: 20px;
+  height: 60px;
   padding-right: 20px;
+  padding-left: 20px;
 
+  line-height: 30px;
   text-transform: uppercase;
 
-  border: 1px solid $color-grey;
   background-color: $color-white;
+  border: 1px solid $color-grey;
 
   @media (min-width: $viewpoint--tablet) {
     justify-content: center;
@@ -214,12 +222,14 @@
 .pricing__features-yes {
   width: 31px;
   height: auto;
+
   fill: $color-green-yes;
 }
 
 .pricing__features-no {
-  fill: $color-red-no;
   height: auto;
+
+  fill: $color-red-no;
 }
 
 
@@ -246,18 +256,17 @@
 .pricing__legend-item {
   display: flex;
   align-items: center;
-  height: 59px;
   width: 153px;
+  height: 59px;
+  padding-left: 15px;
 
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
 
-  padding-left: 15px;
-
-  border: 1px solid $color-grey;
   background-color: $color-white;
+  border: 1px solid $color-grey;
 
   @media (min-width: $viewpoint--tablet) {
     height: 47px;
@@ -265,23 +274,25 @@
 
   @media (min-width: $viewpoint--desktop) {
     width: 234px;
-    font-size: 18px;
-    line-height: 30px;
     height: 62px;
     padding-left: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 .pricing__toggles {
   display: flex;
   justify-content: center;
-  gap: 13px;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-
   padding: 0;
+
   list-style: none;
+
+  gap: 13px;
 
   @media (min-width: $viewpoint--tablet) {
     display: none;
@@ -289,15 +300,16 @@
 }
 
 .pricing__toggle {
-  padding: 0;
-  margin: 0;
   display: block;
-  border-radius: 50px;
   width: 12px;
   height: 12px;
-  border: 3px solid transparent;
+  margin: 0;
+  padding: 0;
+
   background-color: rgba($color-navi, 0.3);
   background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
   cursor: pointer;
 
   &:hover {
@@ -309,8 +321,8 @@
   }
 
   &--current {
-    border: 3px solid $color-navi;
     background-color: transparent;
+    border: 3px solid $color-navi;
     cursor: auto;
 
     &:hover {

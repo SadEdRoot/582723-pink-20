@@ -15,10 +15,11 @@
   color: $color-navi;
 
   @media (min-width: $viewpoint--tablet) {
-    font-size: 18px;
     max-width: 600px;
     padding-top: 91px;
     padding-bottom: 77px;
+
+    font-size: 18px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -63,9 +64,9 @@
 
   @media (min-width: $viewpoint--desktop) {
     width: calc(33.3% - 13.33px);
+    margin-top: 34px;
     margin-right: 20px;
     margin-bottom: 20px;
-    margin-top: 34px;
 
     &:nth-child(2n) {
       margin-right: 20px;
@@ -86,9 +87,9 @@
     }
 
     .photo__card {
-      margin: 0 20px;
       max-width: 940px;
       min-height: 0;
+      margin: 0 20px;
 
       @media (min-width: $viewpoint--desktop) {
         margin: 0 auto;
@@ -108,10 +109,9 @@
   width: 140px;
   min-height: 36px;
 
+  font-weight: bold;
   font-size: 12px;
   line-height: 24px;
-  font-weight: bold;
-
   color: white;
 
   background-color: $color-magenta;
@@ -121,20 +121,22 @@
   }
 
   @media (min-width: $viewpoint--desktop) {
-    right: 130px;
     top: 53px;
+    right: 130px;
   }
 }
 
 .photo__user-panorama {
   @media (min-width: $viewpoint--tablet) {
-    object-fit: cover;
     min-height: 509px;
+
+    object-fit: cover;
   }
 }
 
 .photo__card {
   position: relative;
+
   display: flex;
   flex-direction: column;
   padding: 18px 10px 19px 17px;
@@ -178,7 +180,6 @@
   font-size: 12px;
   line-height: 24px;
   color: $color-magenta;
-
   text-transform: uppercase;
 
   @media (min-width: $viewpoint--tablet) {
@@ -198,10 +199,11 @@
 
 .photo__like-wrapper {
   display: flex;
-  gap: 18px;
   align-items: center;
-  padding-top: 10px;
   height: auto;
+  padding-top: 10px;
+
+  gap: 18px;
 
   @media (min-width: $viewpoint--tablet) {
     flex-direction: row-reverse;
@@ -214,8 +216,10 @@
     @media (min-width: $viewpoint--tablet) {
       position: absolute;
       right: 30px;
+
       width: 118px;
       padding-top: 2px;
+
       gap: 0;
     }
   }

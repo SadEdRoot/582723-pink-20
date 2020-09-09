@@ -1,20 +1,20 @@
 .page-footer {
-  min-width: 320px;
-  min-height: 282px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 23px;
-  padding-bottom: 21px;
   align-items: center;
+  min-width: 320px;
+  min-height: 282px;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
 
   @media (min-width: $viewpoint--tablet) {
     flex-direction: row;
-    min-height: 120px;
     justify-content: space-between;
     align-items: center;
+    min-height: 120px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -22,8 +22,8 @@
   @media (min-width: $viewpoint--desktop) {
     min-height: 197px;
     padding-right: 10px;
-    padding-left: 10px;
     padding-bottom: 20px;
+    padding-left: 10px;
   }
 }
 
@@ -35,8 +35,9 @@
   }
 
   &:active {
-    fill: $color-navi;
     opacity: 0.3;
+
+    fill: $color-navi;
   }
 
   &--modile {
@@ -67,6 +68,7 @@
 
   @media (min-width: $viewpoint--desktop) {
     padding-top: 13px;
+
     font-size: 18px;
     line-height: 18px;
   }
@@ -74,9 +76,11 @@
 
 .page-footer__academy {
   display: flex;
-  gap: 13px;
   align-items: center;
+
   color: $color-navi;
+
+  gap: 13px;
 
   svg {
     fill: $color-magenta;

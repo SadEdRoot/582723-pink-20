@@ -1,8 +1,9 @@
 .slider {
-  width: 100%;
   position: relative;
-  overflow: hidden;
+
+  width: 100%;
   padding-bottom: 20px;
+  overflow: hidden;
 
   @media (min-width: $viewpoint--tablet) {
     padding-bottom: 0;
@@ -14,9 +15,10 @@
 
   @media (min-width: $viewpoint--desktop) {
     display: block;
-    margin: 0 auto;
     height: auto;
+    margin: 0 auto;
     padding-top: 70px;
+
     fill: $color-quotes;
   }
 }
@@ -24,14 +26,17 @@
 .slider__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .slider__arrow {
   display: none;
-  fill: $color-navi;
-  opacity: 0.3;
+
   cursor: pointer;
+  opacity: 0.3;
+
+  fill: $color-navi;
 
   &:hover {
     opacity: 0.6;
@@ -42,9 +47,10 @@
   }
 
   @media (min-width: $viewpoint--desktop) {
-    display: block;
     position: absolute;
     top: 215px;
+
+    display: block;
   }
 
   &--left {
@@ -57,8 +63,8 @@
 }
 
 .slider__card {
-  width: 100%;
   display: none;
+  width: 100%;
   margin-top: 31px;
 
   &--checked {
@@ -71,11 +77,11 @@
     }
 
     @media (min-width: $viewpoint--desktop) {
-      margin-top: 50px;
       width: 75%;
-      margin-left: auto;
+      margin-top: 50px;
       margin-right: auto;
       margin-bottom: 3px;
+      margin-left: auto;
     }
   }
 }
@@ -83,9 +89,9 @@
 .slider__card-title {
   width: 100%;
   margin: 0;
-  padding: 0;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 0;
 
   font-weight: bold;
   font-size: 18px;
@@ -93,24 +99,27 @@
   text-align: center;
 
   @media (min-width: $viewpoint--tablet) {
-    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 0;
+
+    font-size: 20px;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    font-size: 24px;
     margin-top: 22px;
     margin-bottom: 0;
+
+    font-size: 24px;
   }
 }
 
 .slider__card-sudtitle {
+  display: none;
+  margin-top: 0;
+
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  margin-top: 0;
-  display: none;
 
   @media (min-width: $viewpoint--tablet) {
     display: block;
@@ -119,6 +128,7 @@
 
   @media (min-width: $viewpoint--desktop) {
     margin-bottom: 30px;
+
     font-size: 18px;
   }
 }
@@ -126,21 +136,20 @@
 .slider__card-message {
   width: 100%;
   margin: 0;
-  padding: 0;
-
   margin-top: 3px;
   margin-bottom: 16px;
+  padding: 0;
 
   font-weight: normal;
   font-size: 14px;
-
   line-height: 30px;
   text-align: center;
   color: $color-navi;
 
   @media (min-width: $viewpoint--tablet) {
-    font-size: 18px;
     margin-top: 0;
+
+    font-size: 18px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -151,13 +160,14 @@
 .slider__toggles {
   display: flex;
   justify-content: center;
-  gap: 13px;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-
   padding: 0;
+
   list-style: none;
+
+  gap: 13px;
 
   @media (min-width: $viewpoint--desktop) {
     display: none;
@@ -165,15 +175,16 @@
 }
 
 .slider__toggle {
-  padding: 0;
-  margin: 0;
   display: block;
-  border-radius: 50px;
   width: 12px;
   height: 12px;
-  border: 3px solid transparent;
+  margin: 0;
+  padding: 0;
+
   background-color: rgba($color-navi, 0.3);
   background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
   cursor: pointer;
 
   &:hover {
@@ -185,8 +196,8 @@
   }
 
   &--current {
-    border: 3px solid $color-navi;
     background-color: transparent;
+    border: 3px solid $color-navi;
     cursor: auto;
 
     &:hover {

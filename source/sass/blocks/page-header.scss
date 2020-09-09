@@ -1,10 +1,12 @@
 .page-header {
-  min-width: 320px;
-  margin: auto;
-  background-color: $bg-navy;
   position: relative;
   z-index: 1;
+
+  min-width: 320px;
+  margin: auto;
   margin-bottom: -67px;
+
+  background-color: $bg-navy;
 
   &--close {
     background-color: rgba($color-black, 0.3);
@@ -22,23 +24,26 @@
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   max-width: 980px;
   margin: 0 auto;
 
+  box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
   @media (min-width: $viewpoint--desktop) {
     justify-content: space-between;
+
     box-shadow: none;
   }
 }
 
 .page-header__header-wrapper {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding-top: 18px;
   padding-bottom: 19px;
+
   box-shadow: 0 1px 0 $color-black;
 
   @media (min-width: $viewpoint--tablet) {
@@ -59,13 +64,14 @@
 
 .page-header__burger-btn {
   margin-right: 20px;
-  cursor: pointer;
+  padding: 0;
+
+  color: $color-white;
 
   background-color: transparent;
-  color: $color-white;
   border: none;
   border-radius: 0;
-  padding: 0;
+  cursor: pointer;
 
   svg {
     fill: currentColor;

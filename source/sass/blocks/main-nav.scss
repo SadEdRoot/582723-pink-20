@@ -1,10 +1,10 @@
 .main-nav {
-  width: 100%;
   display: none;
+  width: 100%;
 
   @media (min-width: $viewpoint--desktop) {
-    width: 70%;
     display: block;
+    width: 70%;
   }
 
   &--open {
@@ -17,23 +17,22 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__item {
-  text-align: center;
   width: 100%;
-
+  margin-top: 1px;
 
   list-style: none;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
+  text-align: center;
   color: $color-white;
-  margin-top: 1px;
 
   background-color: $bg-navy;
   box-shadow: 0 1px 0 $color-black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -43,30 +42,33 @@
     padding-right: 40px;
     padding-left: 40px;
 
+    font-weight: normal;
+    line-height: 18px;
+
+    background-color: transparent;
+    box-shadow: none;
+
 
     &:last-child {
       padding-right: 20px;
     }
-
-    background-color: transparent;
-    box-shadow: none;
-    font-weight: normal;
-    line-height: 18px;
   }
 }
 
 .main-nav__link {
   display: block;
-
-  padding-bottom: 15px;
   padding-top: 16px;
+  padding-bottom: 15px;
+
   text-transform: uppercase;
 
   @media (min-width: $viewpoint--desktop) {
-    padding-bottom: 10px;
     padding-top: 10px;
-    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+
     text-transform: capitalize;
+
+    border-bottom: 2px solid transparent;
 
 
     &:hover {
@@ -75,11 +77,13 @@
 
     &:active {
       color: $color-white;
+
       opacity: 0.3;
     }
 
     &--active {
       border-bottom: 2px solid $color-white;
+
       pointer-events: none;
     }
 

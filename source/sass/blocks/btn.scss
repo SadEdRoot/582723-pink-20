@@ -1,11 +1,10 @@
 .btn {
-  box-sizing: border-box;
-  width: 280px;
-  min-height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 55px;
 
   font-weight: bold;
   font-size: 18px;
@@ -14,6 +13,7 @@
   color: $color-white;
 
   border: 3px solid $color-white;
+  cursor: pointer;
 
   @media (min-width: $viewpoint--tablet) {
     width: 300px;
@@ -25,6 +25,7 @@
 
   &--submit {
     min-height: 63px;
+
     text-transform: uppercase;
 
     background: $color-green;
@@ -53,6 +54,7 @@
 
     &:hover {
       color: $color-white;
+
       background: $color-magenta;
       border-color: $color-magenta;
     }
@@ -63,20 +65,22 @@
   }
 
   &--reset {
-    border: 3px solid $color-navi;
     color: $color-navi;
+
+    border: 3px solid $color-navi;
     opacity: 0.1;
 
     &:hover {
-      opacity: 0.3;
       border: 3px solid $color-navi;
+      opacity: 0.3;
     }
 
     &:active {
-      opacity: 0.3;
       color: $color-white;
-      border: 3px solid $color-navi;
+
       background-color: $color-navi;
+      border: 3px solid $color-navi;
+      opacity: 0.3;
     }
   }
 
@@ -103,6 +107,7 @@
 
     &:hover {
       color: $color-magenta;
+
       background: $color-white;
       border-color: $color-white;
     }

@@ -5,19 +5,20 @@
 }
 
 .upload__header {
+  width: 90%;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 43px;
-  width: 90%;
 
   line-height: 30px;
   text-align: center;
   color: $color-navi;
 
   @media (min-width: $viewpoint--tablet) {
-    font-size: 18px;
     padding-top: 45px;
     padding-bottom: 70px;
+
+    font-size: 18px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -27,45 +28,46 @@
 }
 
 .upload__app {
-  background-color: $bg-light-grey;
   padding-top: 20px;
   padding-bottom: 34px;
 
+  background-color: $bg-light-grey;
+
 
   @media (min-width: $viewpoint--tablet) {
-    padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
     padding-bottom: 30px;
   }
 
   @media (min-width: $viewpoint--desktop) {
+    justify-content: flex-start;
     width: 940px;
     margin: 0 auto;
     padding-top: 41px;
     padding-bottom: 57px;
-    justify-content: flex-start;
   }
 }
 
 .upload__user-photo {
-  margin: 0 auto;
   box-sizing: content-box;
+  margin: 0 auto;
 
   @media (min-width: $viewpoint--tablet) {
     width: 300px;
     height: 400px;
     margin: 0 auto 0 20px;
-    padding-bottom: 20px;
     padding-top: 16px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $viewpoint--desktop) {
     margin: 0;
-    padding-left: 80px;
-    padding-right: 90px;
     padding-top: 16px;
+    padding-right: 90px;
     padding-bottom: 0;
+    padding-left: 80px;
   }
 }
 
@@ -77,10 +79,10 @@
   }
 
   @media (min-width: $viewpoint--desktop) {
-    width: calc(50% - 60px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: calc(50% - 60px);
     padding: 0;
   }
 }
@@ -88,8 +90,8 @@
 .upload__mobile-icons {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
   padding-top: 40px;
+  padding-left: 20px;
 
   @media (min-width: $viewpoint--tablet) {
     display: none;
@@ -97,11 +99,10 @@
 }
 
 .upload__handel-wrapper {
-  width: 100%;
-
-  align-items: center;
-  padding: 0 26px;
   display: none;
+  align-items: center;
+  width: 100%;
+  padding: 0 26px;
 
   border-bottom: 1px solid rgba($color-navi, 0.1);
 
@@ -110,12 +111,13 @@
   }
 
   @media (min-width: $viewpoint--tablet) {
-    gap: 20px;
     display: flex;
     justify-content: space-between;
     padding: 0;
-    padding-left: 13px;
     padding-right: 18px;
+    padding-left: 13px;
+
+    gap: 20px;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -131,11 +133,11 @@
 
 .upload__icon-wrapper {
   @media (min-width: $viewpoint--tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 22px;
     height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   @media (min-width: $viewpoint--desktop) {
@@ -146,12 +148,13 @@
 
 .upload__icon {
   display: none;
+
   fill: $color-magenta;
 
   @media (min-width: $viewpoint--tablet) {
     display: block;
-    height: 48px;
     width: 44px;
+    height: 48px;
   }
 
 
@@ -161,8 +164,8 @@
   }
 
   &--small {
-    height: 16px;
     width: 16px;
+    height: 16px;
 
     @media (min-width: $viewpoint--desktop) {
       width: 32px;
@@ -172,9 +175,9 @@
 }
 
 .upload__btn-wrapper {
+  width: auto;
   margin: 0 auto;
   padding-top: 27px;
-  width: auto;
 
   @media (min-width: $viewpoint--tablet) {
     padding-top: 56px;
@@ -189,9 +192,9 @@
 
 .upload__btn {
   margin-top: 10px;
+  margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
-  margin-right: auto;
 
   @media (min-width: $viewpoint--tablet) {
     margin-bottom: 24px;
@@ -207,29 +210,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 35px;
 
   @media (min-width: $viewpoint--tablet) {
     flex-direction: column;
-    gap: 0;
     padding-top: 0;
     padding-bottom: 0;
+
+    gap: 0;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    padding-left: 0;
     padding-right: 29px;
+    padding-left: 0;
   }
 }
 
 .upload__scale {
   position: relative;
-  border: 1px solid $color-navi;
+
   width: 90%;
-  margin: 0 auto;
   height: 0;
+  margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 35px;
+
+  border: 1px solid $color-navi;
 
   @media (min-width: $viewpoint--tablet) {
     width: 80%;
@@ -258,14 +265,16 @@
 }
 
 .upload__scale-marker {
-  background: $color-white;
-  border: 2px solid $color-magenta;
-  border-radius: 50%;
-  height: 14px;
-  width: 14px;
   position: absolute;
   top: -6px;
   left: 80%;
+
+  width: 14px;
+  height: 14px;
+
+  background: $color-white;
+  border: 2px solid $color-magenta;
+  border-radius: 50%;
   transform: translateX(-50%);
   cursor: pointer;
 
@@ -303,10 +312,10 @@
 }
 
 .upload__link {
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
   padding-left: 34px;
 
   svg {

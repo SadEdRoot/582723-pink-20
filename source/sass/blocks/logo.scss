@@ -19,9 +19,9 @@
   }
 
   &--tablet {
+    display: none;
     width: 145px;
     height: 40px;
-    display: none;
 
     @media (min-width: $viewpoint--tablet) {
       display: block;
@@ -33,9 +33,9 @@
   }
 
   &--desktop {
+    display: none;
     width: 147px;
     height: 40px;
-    display: none;
 
     @media (min-width: $viewpoint--desktop) {
       display: block;
