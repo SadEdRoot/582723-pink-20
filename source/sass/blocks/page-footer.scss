@@ -6,8 +6,8 @@
   justify-content: space-around;
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 23px;
+  padding-bottom: 21px;
   align-items: center;
 
   @media (min-width: $viewpoint--tablet) {
@@ -23,6 +23,7 @@
     min-height: 197px;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -60,7 +61,12 @@
 .page-footer__creator {
   line-height: 18px;
 
+  @media (min-width: $viewpoint--tablet) {
+    padding-top: 7px;
+  }
+
   @media (min-width: $viewpoint--desktop) {
+    padding-top: 13px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -68,7 +74,7 @@
 
 .page-footer__academy {
   display: flex;
-  gap: 15px;
+  gap: 13px;
   align-items: center;
   color: $color-navi;
 

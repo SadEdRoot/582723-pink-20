@@ -15,7 +15,7 @@
 
   @media (min-width: $viewpoint--desktop) {
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 

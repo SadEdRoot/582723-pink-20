@@ -128,7 +128,8 @@
 
 .photo__user-panorama {
   @media (min-width: $viewpoint--tablet) {
-    object-fit: contain;
+    object-fit: cover;
+    min-height: 509px;
   }
 }
 

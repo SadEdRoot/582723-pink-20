@@ -36,6 +36,21 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
+  &--form {
+    padding-bottom: 44px;
+    padding-top: 94px;
+
+    @media (min-width: $viewpoint--tablet) {
+      padding-top: 177px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      padding-top: 171px;
+      padding-bottom: 89px;
+    }
+  }
 }
 
 .page-main__title {
@@ -64,16 +79,18 @@
   text-align: center;
   margin: 0 auto;
   width: 90%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 44px;
+  padding-bottom: 15px;
 
   @media (min-width: $viewpoint--tablet) {
     font-size: 18px;
-    width: 75%;
+    padding-top: 91px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $viewpoint--desktop) {
-    width: 760px;
+    width: 780px;
+    padding-bottom: 72px;
   }
 }
 

@@ -1,7 +1,7 @@
 .btn {
   box-sizing: border-box;
   width: 280px;
-  height: 55px;
+  min-height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,7 @@
   }
 
   &--submit {
+    min-height: 63px;
     text-transform: uppercase;
 
     background: $color-green;

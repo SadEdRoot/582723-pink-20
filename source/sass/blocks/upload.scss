@@ -98,7 +98,7 @@
 
 .upload__handel-wrapper {
   width: 100%;
-  gap: 20px;
+
   align-items: center;
   padding: 0 26px;
   display: none;
@@ -110,6 +110,7 @@
   }
 
   @media (min-width: $viewpoint--tablet) {
+    gap: 20px;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -273,7 +274,11 @@
   }
 
   &--crop {
-    left: 76%;
+    left: 83%;
+
+    @media (min-width: $viewpoint--tablet) {
+      left: 76%;
+    }
 
     @media (min-width: $viewpoint--desktop) {
       left: 26%;

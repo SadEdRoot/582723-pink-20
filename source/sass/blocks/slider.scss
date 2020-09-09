@@ -15,6 +15,7 @@
   @media (min-width: $viewpoint--desktop) {
     display: block;
     margin: 0 auto;
+    height: auto;
     padding-top: 70px;
     fill: $color-quotes;
   }
@@ -100,7 +101,7 @@
   @media (min-width: $viewpoint--desktop) {
     font-size: 24px;
     margin-top: 22px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 }
 

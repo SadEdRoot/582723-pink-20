@@ -1,9 +1,24 @@
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 178px;
+  gap: 9px;
+  min-width: 178px;
   padding: 0;
   margin: 0;
+  padding-bottom: 5px;
+
+  @media (min-width: $viewpoint--tablet) {
+    padding-bottom: 0;
+    padding-top: 7px;
+    padding-right: 13px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 11px;
+    gap: 5px;
+  }
 }
 
 .social-list__link {

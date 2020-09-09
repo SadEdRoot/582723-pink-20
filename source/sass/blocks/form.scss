@@ -9,14 +9,15 @@
     padding-left: 20px;
     padding-right: 20px;
     grid-template-columns: auto;
-    gap: 65px;
+    gap: 60px;
   }
 
   @media (min-width: $viewpoint--desktop) {
     padding-left: 10px;
     padding-right: 10px;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    column-gap: 70px;
+    row-gap: 60px;
   }
 }
 
@@ -29,7 +30,7 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 
 
   @media (min-width: $viewpoint--tablet) {
@@ -45,11 +46,15 @@
 
   &--no-board {
     border: none;
+
+    @media (min-width: $viewpoint--desktop) {
+      padding: 0;
+    }
   }
 
   &--inner-padding {
     @media (min-width: $viewpoint--tablet) {
-      padding: 47px 60px 60px 60px;
+      padding: 24px 60px 24px 60px;
     }
 
     @media (min-width: $viewpoint--desktop) {
@@ -57,15 +62,52 @@
     }
   }
 
+  &--checkbox {
+    padding-bottom: 17px;
+
+    @media (min-width: $viewpoint--desktop) {
+      padding-top: 26px;
+      padding-bottom: 28px;
+    }
+  }
+
+  &--app {
+    padding-bottom: 32px;
+    padding-top: 28px;
+
+    @media (min-width: $viewpoint--desktop) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
   &--contact {
+    padding-top: 32px;
+    padding-bottom: 25px;
+
+    @media (min-width: $viewpoint--tablet) {
+      padding-top: 35px;
+      padding-bottom: 0;
+    }
+
     @media (min-width: $viewpoint--desktop) {
       grid-area: 2 / 1 / 3 / 3;
+      padding-top: 30px;
     }
   }
 
   &--emotion {
+    padding-bottom: 21px;
+
+    @media (min-width: $viewpoint--tablet) {
+      padding-top: 41px;
+      padding-bottom: 45px;
+    }
+
     @media (min-width: $viewpoint--desktop) {
       grid-area: 4 / 1 / 5 / 3;
+      padding-top: 39px;
+      padding-bottom: 38px;
     }
   }
 }
@@ -106,7 +148,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 100%;
-  padding: 40px 20px 20px 20px;
+  padding: 39px 20px 0 20px;
 
   @media (min-width: $viewpoint--tablet) {
     width: auto;
@@ -118,8 +160,8 @@
   }
 
   @media (min-width: $viewpoint--desktop) {
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &--hidden-legend {
@@ -135,7 +177,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $color-magenta;
-  padding-left: 20px;
+  padding-left: 23px;
 
   @media (min-width: $viewpoint--tablet) {
     padding-left: 0;
@@ -145,14 +187,26 @@
   &--center {
     text-align: center;
   }
+
+  &--contact {
+    @media (min-width: $viewpoint--tablet) {
+      padding-left: 17px;
+      padding-top: 11px;
+      padding-bottom: 27px;
+    }
+
+    @media (min-width: $viewpoint--desktop) {
+      padding-bottom: 13px;
+    }
+  }
 }
 
 .form__input {
   width: 100%;
-  height: 59px;
+  height: 63px;
   padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 17px;
 
   font-size: 18px;
   line-height: 30px;
@@ -169,6 +223,11 @@
     border: 2px solid $color-magenta;
     outline: none;
   }
+
+  @media (min-width: $viewpoint--tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .form__checkbox-wrapper {
@@ -176,6 +235,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: 1fr 1fr;
+    column-gap: 53px;
   }
 }
 
@@ -185,9 +245,8 @@
 
   &:checked + label::after {
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 2px;
+    top: 20px;
     width: 35px;
     height: 35px;
     background-image: url("../img/icon-yes-red.svg");
@@ -215,8 +274,8 @@
   display: block;
   width: 100%;
   padding-left: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 30px;
   font-size: 18px;
   line-height: 30px;
 
@@ -227,10 +286,9 @@
   &::before {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35px;
-    height: 35px;
+    top: 18px;
+    width: 39px;
+    height: 39px;
     border: 2px solid $color-grey;
     border-radius: 1px;
     content: "";
@@ -248,9 +306,8 @@
 
   &:checked + label::after {
     position: absolute;
-    left: 11px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 13px;
+    top: 27px;
     width: 15px;
     height: 15px;
     background-color: $color-magenta;
@@ -278,7 +335,7 @@
   width: 100%;
   padding-left: 70px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   font-size: 18px;
   line-height: 30px;
 
@@ -286,13 +343,16 @@
     padding-left: 60px;
   }
 
+  @media (min-width: $viewpoint--desktop) {
+    margin-left: 42px;
+  }
+
   &::before {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 37px;
-    height: 37px;
+    top: 14px;
+    width: 41px;
+    height: 41px;
     border: 2px solid $color-grey;
     border-radius: 50%;
     content: "";
@@ -302,7 +362,7 @@
 
 .form__textarea {
   width: 100%;
-  height: 197px;
+  min-height: 201px;
   resize: none;
 
   font-size: 18px;
@@ -313,6 +373,15 @@
 
   border: 2px solid $color-grey;
   border-radius: 1px;
+  margin-top: -5px;
+
+  @media (min-width: $viewpoint--tablet) {
+    min-height: 193px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    min-height: 127px;
+  }
 }
 
 .form__submit {
@@ -328,7 +397,7 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 10px auto;
+  margin: 14px auto 17px;
   text-align: center;
 
   @media (min-width: $viewpoint--tablet) {
@@ -340,6 +409,14 @@
   color: $color-magenta;
 }
 
+.form__spot-desktop {
+  display: none;
+
+  @media (min-width: $viewpoint--desktop) {
+    display: initial;
+  }
+}
+
 .form__button-field {
   display: flex;
   align-items: center;
@@ -348,9 +425,79 @@
   @media (min-width: $viewpoint--tablet) {
     justify-content: space-between;
     flex-direction: row;
+
+    padding-top: 5px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $viewpoint--desktop) {
     grid-area: 5 / 1 / 6 / 3;
+    padding-top: 4px;
+    padding-bottom: 2px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $viewpoint--tablet) {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    margin-top: 13px;
+    margin-bottom: 53px;
+  }
+
+  &--no-mb {
+    @media (min-width: $viewpoint--desktop) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__contact {
+  @media (min-width: $viewpoint--desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__contact-wrapper {
+  @media (min-width: $viewpoint--tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 46%;
+  }
+}
+
+.form__input-wrapper {
+  @media (min-width: $viewpoint--tablet) {
+    position: relative;
+  }
+}
+
+.form__icon-wrapper {
+  display: none;
+
+  @media (min-width: $viewpoint--tablet) {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    top: 1px;
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+    background-color: $bg-grey;
+
+    svg {
+      fill: $color-magenta;
+    }
   }
 }

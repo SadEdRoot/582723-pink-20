@@ -10,12 +10,12 @@
 
   @media (min-width: $viewpoint--tablet) {
     padding-top: 97px;
-    padding-bottom: 34px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $viewpoint--desktop) {
     padding-top: 157px;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   width: 840px;
   list-style: none;
-  padding-bottom: 34px;
+  padding-bottom: 28px;
 
   left: 50%;
   transform: translateX(calc(-50% - 20px));
@@ -63,7 +63,7 @@
 .pricing__header {
   position: relative;
   text-align: center;
-  height: 95px;
+  height: 98px;
   line-height: 30px;
   color: $color-white;
 
@@ -86,13 +86,13 @@
 
   &--hit::before {
     position: absolute;
-    left: -2px;
+    left: -1px;
     top: -2px;
     width: 74px;
     height: 73px;
 
     background-image: url("../img/bg-hit.svg");
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -114,8 +114,8 @@
 
   &--hit::after {
     position: absolute;
-    left: 2px;
-    top: 2px;
+    left: 6px;
+    top: 6px;
     width: 74px;
     height: 73px;
     font-size: 14px;
@@ -182,7 +182,7 @@
 
 .pricing__features-item {
   line-height: 30px;
-  height: 59px;
+  height: 60px;
 
   display: flex;
   justify-content: space-between;
@@ -213,11 +213,13 @@
 
 .pricing__features-yes {
   width: 31px;
+  height: auto;
   fill: $color-green-yes;
 }
 
 .pricing__features-no {
   fill: $color-red-no;
+  height: auto;
 }
 
 

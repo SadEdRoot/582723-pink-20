@@ -107,14 +107,16 @@
   @media (min-width: $viewpoint--tablet) {
     align-self: flex-end;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 15px;
+    left: 53%;
+    transform: scale(1.06) translateX(-50%);
     width: 660px;
   }
 
   @media (min-width: $viewpoint--desktop) {
     margin-right: 130px;
+    left: 50%;
+    bottom: 0;
     width: 1050px;
     transform: translateX(-43%);
   }
@@ -192,4 +194,14 @@
     margin-bottom: 125px;
     width: 300px;
   }
+}
+
+.intro__icon-android {
+  position: relative;
+  top: 5px;
+}
+
+.intro__icon-windows {
+  position: relative;
+  top: 11px;
 }
